@@ -6,6 +6,6 @@ MetaDataFormat = "yaml"
 canonifyurls = true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/docs/content/"
+  editURL = "https://github.com/matcornic/hugo-learn-doc/edit/master/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
