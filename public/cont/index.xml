@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Learn Theme</title>
-    <link>https://matcornic.github.io/hugo-learn-doc/</link>
-    <description>Recent content on Hugo Learn Theme</description>
+    <title>Conts on Hugo Learn Theme</title>
+    <link>https://matcornic.github.io/hugo-learn-doc/cont/</link>
+    <description>Recent content in Conts on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://matcornic.github.io/hugo-learn-doc/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Basics</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/</guid>
-      <description>
-
-&lt;h3 id=&#34;chapter-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 1&lt;/h3&gt;
-
-&lt;h1 id=&#34;basics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basics&lt;/h1&gt;
-
-&lt;p&gt;Discover what this Hugo theme is all about and the core-concepts behind it.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="https://matcornic.github.io/hugo-learn-doc/cont/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Content</title>
@@ -37,34 +21,6 @@
 &lt;h1 id=&#34;content:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Content&lt;/h1&gt;
 
 &lt;p&gt;Find out how to create and organize your content quickly and intuitively.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contributing</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/contributing/</link>
-      <pubDate>Sat, 09 Apr 2016 16:58:30 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;To help the world to be a better place, you could :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Contribute to this doc by using &lt;em&gt;Edit this page&lt;/em&gt; link.&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, the static website generator which this theme is for&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://getgrav.org/&#34;&gt;Grav&lt;/a&gt;, the flat file CMS of which this theme is from (Thanks to MIT license)&lt;/li&gt;
-&lt;li&gt;Contribute to the &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;Hugo-theme-learn&lt;/a&gt; theme itself&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;todo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;TODO&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Handling more than 2 levels in documentation.&lt;/li&gt;
-&lt;li&gt;Search in site&lt;/li&gt;
-&lt;li&gt;Handling videos&lt;/li&gt;
-&lt;li&gt;Add optional button to create doc issue (like github)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -172,36 +128,6 @@ icon: &amp;quot;&amp;quot;
 &lt;p&gt;Hugo provides a &lt;a href=&#34;https://gohugo.io/content/ordering/&#34;&gt;flexible way&lt;/a&gt; to handle order for your pages.&lt;/p&gt;
 
 &lt;p&gt;The simplest way is to use &lt;code&gt;weight&lt;/code&gt; parameter in the front matter of your page.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What is this Hugo theme ?</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; is a theme for &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this theme is fully designed for &lt;strong&gt;technical documentation&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This theme is a partial porting of the &lt;a href=&#34;http://learn.getgrav.org/&#34;&gt;Learn theme&lt;/a&gt; of &lt;a href=&#34;https://getgrav.org/&#34;&gt;Grav&lt;/a&gt;, a modern flat-file CMS written in PHP.&lt;/p&gt;
-
-&lt;p&gt;This current documentation has been statically generated with Hugo with a simple command : &lt;code&gt;hugo -t hugo-theme-learn&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;images/grav-overview.png?width=60%&#34; alt=&#34;Grav Overview&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Requirements</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/requirements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/requirements/</guid>
-      <description>&lt;p&gt;Thanks to the simplicity of Hugo, this page is as empty as this theme needs requirements.&lt;/p&gt;
-
-&lt;p&gt;Just download &lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;Hugo&lt;/a&gt; binary for your OS (Windows, Linux, Mac) : it&amp;rsquo;s that simple.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;images/magic.gif?classes=shadow&#34; alt=&#34;Magic&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -903,179 +829,6 @@ Content for chapter one.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg?width=40%&amp;amp;classes=border,shadow&#34; alt=&#34;stormtroopocat&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Getting started</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/installation/</guid>
-      <description>
-
-&lt;p&gt;The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you to train by following this &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;great documentation for beginners&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-your-project:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your project&lt;/h2&gt;
-
-&lt;p&gt;Hugo provides a &lt;code&gt;new&lt;/code&gt; command to create a new website.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site &amp;lt;new_project&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-the-theme:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Install the theme&lt;/h2&gt;
-
-&lt;p&gt;Install the &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; theme by following &lt;a href=&#34;https://gohugo.io/themes/installing/&#34;&gt;this documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The theme&amp;rsquo;s repository is: &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn.git&#34;&gt;https://github.com/matcornic/hugo-theme-learn.git&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;basic-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basic configuration&lt;/h2&gt;
-
-&lt;p&gt;When building the website, you can set a theme by using &lt;code&gt;--theme&lt;/code&gt; option. We suggest you to edit your configuration file and set the theme by default. Example with &lt;code&gt;config.toml&lt;/code&gt; format.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;theme = &amp;quot;hugo-theme-learn&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-your-first-chapter-page:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first chapter page&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new --kind chapter basics/index.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-your-first-content-pages:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first content pages&lt;/h2&gt;
-
-&lt;p&gt;Then, create content pages inside the previous chapter. Here are two ways to create content in the chapter :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new basics/first-content.md
-hugo new basics/second-content/index.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;launching-the-website:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Launching the website&lt;/h2&gt;
-
-&lt;p&gt;Launch the following command&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo serve
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Go to &lt;code&gt;http://localhost:1313/basics&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are curious, at the home page (&lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;), you should see an empty homepage. It&amp;rsquo;s because this theme does not really provide a default homepage.&lt;/p&gt;
-
-&lt;p&gt;You typically have 2 choices :&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create an &lt;a href=&#34;https://gohugo.io/templates/homepage/&#34;&gt;overview homepage&lt;/a&gt; for your project. Write an &lt;code&gt;index.html&lt;/code&gt; file in &lt;em&gt;layouts/&lt;/em&gt; folder.&lt;/li&gt;
-&lt;li&gt;Create a redirection to one your documentation page. Either by:
-
-&lt;ol&gt;
-&lt;li&gt;Configuring your server to automatically redirect homepage to one your documentation page - &lt;em&gt;Recommended&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Creating an empty html page with the following code in the head tag :&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;  &amp;lt;meta http-equiv=&amp;quot;refresh&amp;quot; content=&amp;quot;0; url=http://example.com/&amp;quot;/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</link>
-      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</guid>
-      <description>
-
-&lt;h2 id=&#34;site-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Site configuration&lt;/h2&gt;
-
-&lt;p&gt;On top of &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Hugo global configuration&lt;/a&gt;, &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; lets you define the following parameters :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
-  # Prefix URL to edit current page. Useful to give opportunity to people to create merge request for your doc.
-  # See the config.toml file from this documentation site to have an example.
-  editURL = &amp;quot;&amp;quot;
-  # Author of the site, will be used in meta information
-  author = &amp;quot;&amp;quot;
-  # Description of the site, will be used in meta information
-  description = &amp;quot;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;style-customization:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Style customization&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; has been built to be as configurable as possible by defining multiple &lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;partials&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In &lt;code&gt;themes/hugo-theme-learn/layouts/partials/&lt;/code&gt;, you will find all the partials defined for this theme. If you need to overwrite something, don&amp;rsquo;t change the code directly. Instead &lt;a href=&#34;https://gohugo.io/themes/customizing/&#34;&gt;follow this page&lt;/a&gt;. You&amp;rsquo;d create a new partial in the &lt;code&gt;layouts/partials&lt;/code&gt; folder of your local project. This partial will have the priority.&lt;/p&gt;
-
-&lt;p&gt;This theme defines the following partials :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;header&lt;/em&gt;: the header of the content page (contains the breadcrumbs)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;style&lt;/em&gt;: CSS imports, in case you want to override the style&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;footer&lt;/em&gt;: the footer of the content page (contains the arrows)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;script&lt;/em&gt;:  Javacript includes, in case you want to add Javascript on top of provided ones&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;favicon&lt;/em&gt;: the favicon&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;logo&lt;/em&gt;: the logo, on top left hand corner.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;meta&lt;/em&gt;: HTML meta tags, if you want to change default behavior&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;toc&lt;/em&gt;: table of contents&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;change-the-logo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the logo&lt;/h3&gt;
-
-&lt;p&gt;Create a new file in &lt;code&gt;layouts/partials/&lt;/code&gt; named &lt;code&gt;logo.html&lt;/code&gt;. Then write any HTML you want.
-You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image created under the &lt;em&gt;static&lt;/em&gt; folder, or you could paste a SVG definition !&lt;/p&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;The size of the logo will adapt automatically&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h3 id=&#34;change-the-favicon:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the favicon&lt;/h3&gt;
-
-&lt;p&gt;If your favicon is a png, just drop off your image in your local &lt;code&gt;static/images/&lt;/code&gt; folder and names it &lt;code&gt;favicon.png&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you need to change this default behavior, create a new file in &lt;code&gt;layouts/partials/&lt;/code&gt; named &lt;code&gt;favicon.html&lt;/code&gt;. Then write something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;/images/favicon.png&amp;quot; type=&amp;quot;image/x-icon&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;change-default-colors:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change default colors&lt;/h3&gt;
-
-&lt;p&gt;To change default colors, you will have to add a new css file. In order to do that :&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a css file in your local &lt;code&gt;static/css/&lt;/code&gt; folder&lt;/li&gt;
-&lt;li&gt;Create a partial HTML in your local &lt;code&gt;layouts/partials/&lt;/code&gt; named &lt;code&gt;style.html&lt;/code&gt; and add the following line&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link href=&amp;quot;/css/yourfile.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, create CSS in the new file, overwriting default behavior. Don&amp;rsquo;t panic, we give you, just below, colors that are commonly changed.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/* background behind the logo*/
-#header {
-    background: &amp;lt;color&amp;gt;;
-    border-color: &amp;lt;color&amp;gt;;
-}
-
-/* Background color of the menu */
-#sidebar {
-  background-color: &amp;lt;color&amp;gt;;
-}
-
-/* Background color of the menu, when clicked */
-#sidebar ul.topics &amp;gt; li.parent, #sidebar ul.topics &amp;gt; li.active {
-  background-color: &amp;lt;color&amp;gt;;
-}
-
-/* Color of all links, including arrows to get to previous and next pages */
-a {
-    color: &amp;lt;color&amp;gt;;
-}
-a:hover {
-   color: &amp;lt;color&amp;gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
