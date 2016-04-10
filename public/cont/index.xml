@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conts on Hugo Learn Theme</title>
+    <link>https://matcornic.github.io/hugo-learn-doc/cont/</link>
+    <description>Recent content in Conts on Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://matcornic.github.io/hugo-learn-doc/cont/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Content</title>
+      <link>https://matcornic.github.io/hugo-learn-doc/cont/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://matcornic.github.io/hugo-learn-doc/cont/</guid>
+      <description>
+
+&lt;h3 id=&#34;chapter-2:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 2&lt;/h3&gt;
+
+&lt;h1 id=&#34;content:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Content&lt;/h1&gt;
+
+&lt;p&gt;Find out how to create and organize your content quickly and intuitively.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pages</title>
+      <link>https://matcornic.github.io/hugo-learn-doc/cont/pages/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://matcornic.github.io/hugo-learn-doc/cont/pages/</guid>
+      <description>
+
+&lt;p&gt;In &lt;strong&gt;Hugo&lt;/strong&gt;, pages are the core of your site. Once it is configure, pages are definitely the added value to your documentation site.&lt;/p&gt;
+
+&lt;h2 id=&#34;folders:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Folders&lt;/h2&gt;
+
+&lt;p&gt;Organize your site like &lt;a href=&#34;https://gohugo.io/content/organization/&#34;&gt;any other Hugo project&lt;/a&gt;. Typically, you will have a &lt;em&gt;content&lt;/em&gt; folder with all your pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+└── content
+    ├── brace
+    |   ├── yourselves.md   &amp;lt;- http://example.com/brace/yourselves/
+    |   ├── winter
+    |   |   └── index.md    &amp;lt;- http://example.com/brace/winter/
+    |   └── index.md        &amp;lt;- http://example.com/brace/
+    ├── is
+    |   ├── coming.md       &amp;lt;- http://example.com/is/comming/
+    |   └── index.md        &amp;lt;- http://example.com/is/
+    └── ned-stark.md        &amp;lt;- http://example.com/ned-stark/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;At that time, &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; supports &lt;strong&gt;only one level&lt;/strong&gt; inside a chapter. So you &lt;strong&gt;can&amp;rsquo;t&lt;/strong&gt; have &lt;a href=&#34;http://example.com/chapter1/chapter1.1/page&#34;&gt;http://example.com/chapter1/chapter1.1/page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;types:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Types&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; defines two types of pages. &lt;em&gt;Default&lt;/em&gt; and &lt;em&gt;Chapter&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;Chapter&lt;/em&gt; is a page that contains another page. Commonly, it contains a simple title and a catch line to define content that can be found under it.
+You can define any HTML as prefix for the menu. In the example below, it&amp;rsquo;s just a number but that could be an &lt;a href=&#34;https://fortawesome.github.io/Font-Awesome/&#34;&gt;icon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/pages-chapter.png?width=50%&#34; alt=&#34;Chapter page&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: Basics
+next: /basics/what-is-this-hugo-theme
+chapter: true
+weight: 0
+icon: &amp;quot;&amp;lt;b&amp;gt;1. &amp;lt;/b&amp;gt;&amp;quot;
+---
+
+### Chapter 1
+
+# Basics
+
+Discover what this Hugo theme is all about and the core-concepts behind it.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A &lt;em&gt;Default&lt;/em&gt; page is any other content page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;images/pages-default.png?width=50%&#34; alt=&#34;Chapter page&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: What is this Hugo theme ?
+prev: /basics
+next: /basics/requirements
+weight: 5
+---
+
+**Hugo-theme-learn** is a theme for [Hugo](https://gohugo.io/), a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this theme is fully designed for **technical documentation**.
+
+This theme is a partial porting of the [Learn theme](http://learn.getgrav.org/) of [Grav](https://getgrav.org/), a modern flat-file CMS written in PHP.
+
+This current documentation has been statically generated with Hugo with a simple command : `hugo -t hugo-theme-learn`
+
+![Grav Overview](images/grav-overview.png?width=60%)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To tell &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; to consider a page as a chapter, just set &lt;code&gt;chapter: true&lt;/code&gt; in the &lt;a href=&#34;#front-matter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;front-matter headers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/archetypes&#34;&gt;archetypes&lt;/a&gt; to help you create this kind of pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;front-matter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Front Matter&lt;/h2&gt;
+
+&lt;p&gt;Each Hugo page has to define a &lt;a href=&#34;https://gohugo.io/content/front-matter/&#34;&gt;Front Matter&lt;/a&gt; in &lt;em&gt;yaml&lt;/em&gt;, &lt;em&gt;toml&lt;/em&gt; or &lt;em&gt;json&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; uses the following parameters on top of the existing ones :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
+# Set to true, it automatically generates a table of contents, available in the top of the screen.
+toc = &amp;quot;false&amp;quot;
+# Path to previous page. If set, add a previous arrow button on page
+prev = &amp;quot;&amp;quot;
+# Path to next page. If set, add a next arrow on page
+next = &amp;quot;&amp;quot;
+# Set a page as chapter, in another words, a page that contains other pages. Changes the display and behavior of the page
+chapter = &amp;quot;false&amp;quot;
+# Set HTML in this parameter. The chapter title in the menu will be prefixed by this. Useful for icons.
+icon: &amp;quot;&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ordering:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ordering&lt;/h2&gt;
+
+&lt;p&gt;Hugo provides a &lt;a href=&#34;https://gohugo.io/content/ordering/&#34;&gt;flexible way&lt;/a&gt; to handle order for your pages.&lt;/p&gt;
+
+&lt;p&gt;The simplest way is to use &lt;code&gt;weight&lt;/code&gt; parameter in the front matter of your page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown syntax</title>
+      <link>https://matcornic.github.io/hugo-learn-doc/cont/markdown/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://matcornic.github.io/hugo-learn-doc/cont/markdown/</guid>
+      <description>
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;This page is a shameful copy of the great &lt;a href=&#34;http://learn.getgrav.org/content/markdown&#34;&gt;Grav original page&lt;/a&gt;.
+Only difference is information about image customization (&lt;a href=&#34;#resizing-image:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;resizing&lt;/a&gt;, &lt;a href=&#34;#add-css-classes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;add CSS classes&lt;/a&gt;&amp;hellip;)&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Let&amp;rsquo;s face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is a better way to write &lt;strong&gt;HTML&lt;/strong&gt;, without all the complexities and ugliness that usually accompanies it.&lt;/p&gt;
+
+&lt;p&gt;Some of the key benefits are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Markdown is simple to learn, with minimal extra characters so it&amp;rsquo;s also quicker to write content.&lt;/li&gt;
+&lt;li&gt;Less chance of errors when writing in markdown.&lt;/li&gt;
+&lt;li&gt;Produces valid XHTML output.&lt;/li&gt;
+&lt;li&gt;Keeps the content and the visual display separate, so you cannot mess up the look of your site.&lt;/li&gt;
+&lt;li&gt;Write in any text editor or Markdown application you like.&lt;/li&gt;
+&lt;li&gt;Markdown is a joy to use!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;John Gruber, the author of Markdown, puts it like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. While Markdown’s syntax has been influenced by several existing text-to-HTML filters, the single biggest source of inspiration for Markdown’s syntax is the format of plain text email.
+&amp;ndash; &lt;cite&gt;John Gruber&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Grav ships with built-in support for &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;https://michelf.ca/projects/php-markdown/extra/&#34;&gt;Markdown Extra&lt;/a&gt;. You must enable &lt;strong&gt;Markdown Extra&lt;/strong&gt; in your &lt;code&gt;system.yaml&lt;/code&gt; configuration file&lt;/p&gt;
+
+&lt;p&gt;Without further delay, let us go over the main elements of Markdown and what the resulting HTML looks like:&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;&lt;i class=&#34;fa fa-bookmark&#34;&gt;&lt;/i&gt; Bookmark this page for easy future reference!&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;headings:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Headings&lt;/h2&gt;
+
+&lt;p&gt;Headings from &lt;code&gt;h1&lt;/code&gt; through &lt;code&gt;h6&lt;/code&gt; are constructed with a &lt;code&gt;#&lt;/code&gt; for each level:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;h1 id=&#34;h1-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h1 Heading&lt;/h1&gt;
+
+&lt;h2 id=&#34;h2-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h2 Heading&lt;/h2&gt;
+
+&lt;h3 id=&#34;h3-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h3 Heading&lt;/h3&gt;
+
+&lt;h4 id=&#34;h4-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h4 Heading&lt;/h4&gt;
+
+&lt;h5 id=&#34;h5-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h5 Heading&lt;/h5&gt;
+
+&lt;h6 id=&#34;h6-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h6 Heading&lt;/h6&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;h1 Heading&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;h2 Heading&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;h3 Heading&amp;lt;/h3&amp;gt;
+&amp;lt;h4&amp;gt;h4 Heading&amp;lt;/h4&amp;gt;
+&amp;lt;h5&amp;gt;h5 Heading&amp;lt;/h5&amp;gt;
+&amp;lt;h6&amp;gt;h6 Heading&amp;lt;/h6&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;comments:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Comments&lt;/h2&gt;
+
+&lt;p&gt;Comments should be HTML compatible&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!--
+This is a comment
+--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Comment below should &lt;strong&gt;NOT&lt;/strong&gt; be seen:&lt;/p&gt;
+
+&lt;!--
+This is a comment
+--&gt;
+
+&lt;h2 id=&#34;horizontal-rules:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Horizontal Rules&lt;/h2&gt;
+
+&lt;p&gt;The HTML &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element is for creating a &amp;ldquo;thematic break&amp;rdquo; between paragraph-level elements. In markdown, you can create a &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; with any of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;___&lt;/code&gt;: three consecutive underscores&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;---&lt;/code&gt;: three consecutive dashes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;***&lt;/code&gt;: three consecutive asterisks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;renders to:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;body-copy:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Body Copy&lt;/h2&gt;
+
+&lt;p&gt;Body copy written as normal, plain text will be wrapped with &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; tags in the rendered HTML.&lt;/p&gt;
+
+&lt;p&gt;So this body copy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders to this HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;emphasis:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Emphasis&lt;/h2&gt;
+
+&lt;h3 id=&#34;bold:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Bold&lt;/h3&gt;
+
+&lt;p&gt;For emphasizing a snippet of text with a heavier font-weight.&lt;/p&gt;
+
+&lt;p&gt;The following snippet of text is &lt;strong&gt;rendered as bold text&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;**rendered as bold text**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders to:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;rendered as bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;and this HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;strong&amp;gt;rendered as bold text&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;italics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Italics&lt;/h3&gt;
+
+&lt;p&gt;For emphasizing a snippet of text with italics.&lt;/p&gt;
+
+&lt;p&gt;The following snippet of text is &lt;em&gt;rendered as italicized text&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;_rendered as italicized text_
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders to:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;rendered as italicized text&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;and this HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;em&amp;gt;rendered as italicized text&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;strikethrough:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;strikethrough&lt;/h3&gt;
+
+&lt;p&gt;In GFM (GitHub flavored Markdown) you can do strikethroughs.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;~~Strike through this text.~~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which renders to:&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Strike through this text.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;del&amp;gt;Strike through this text.&amp;lt;/del&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;blockquotes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;p&gt;For quoting blocks of content from another source within your document.&lt;/p&gt;
+
+&lt;p&gt;Add &lt;code&gt;&amp;gt;&lt;/code&gt; before any text you want to quote.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;gt; **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Fusion Drive&lt;/strong&gt; combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and this HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Fusion Drive&amp;lt;/strong&amp;gt; combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Blockquotes can also be nested:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;&amp;gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+&amp;gt;&amp;gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+&amp;gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;notices:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Notices&lt;/h2&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;The old mechanism for notices overriding the block quote syntax (&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;) has been deprecated.  Notices are now handled via a dedicated plugin called &lt;a href=&#34;https://github.com/getgrav/grav-plugin-markdown-notices&#34;&gt;Markdown Notices&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;lists:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&#34;unordered:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Unordered&lt;/h3&gt;
+
+&lt;p&gt;A list of items in which the order of the items does not explicitly matter.&lt;/p&gt;
+
+&lt;p&gt;You may use any of the following symbols to denote bullets for each list item:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;* valid bullet
+- valid bullet
++ valid bullet
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit
+
+&lt;ul&gt;
+&lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+&lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+&lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+&lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And this HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;Lorem ipsum dolor sit amet&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Consectetur adipiscing elit&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Integer molestie lorem at massa&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Facilisis in pretium nisl aliquet&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Nulla volutpat aliquam velit
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Phasellus iaculis neque&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Purus sodales ultricies&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Vestibulum laoreet porttitor sem&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Ac tristique libero volutpat at&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Faucibus porta lacus fringilla vel&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Aenean sit amet erat nunc&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Eget porttitor lorem&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;ordered:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ordered&lt;/h3&gt;
+
+&lt;p&gt;A list of items in which the order of items does explicitly matter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. Facilisis in pretium nisl aliquet
+5. Nulla volutpat aliquam velit
+6. Faucibus porta lacus fringilla vel
+7. Aenean sit amet erat nunc
+8. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And this HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;Lorem ipsum dolor sit amet&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Consectetur adipiscing elit&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Integer molestie lorem at massa&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Facilisis in pretium nisl aliquet&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Nulla volutpat aliquam velit&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Faucibus porta lacus fringilla vel&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Aenean sit amet erat nunc&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Eget porttitor lorem&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;TIP&lt;/strong&gt;: If you just use &lt;code&gt;1.&lt;/code&gt; for each number, Markdown will automatically number each item. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Code&lt;/h2&gt;
+
+&lt;h3 id=&#34;inline-code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Inline code&lt;/h3&gt;
+
+&lt;p&gt;Wrap inline snippets of code with &lt;code&gt;`&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;In this example, `&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;` should be wrapped as **code**.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;p&gt;In this example, &lt;code&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt; should be wrapped with &lt;strong&gt;code&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;In this example, &amp;lt;code&amp;gt;&amp;amp;lt;section&amp;amp;gt;&amp;amp;lt;/section&amp;amp;gt;&amp;lt;/code&amp;gt; should be wrapped with &amp;lt;strong&amp;gt;code&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;indented-code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Indented code&lt;/h3&gt;
+
+&lt;p&gt;Or indent several lines of code by at least four spaces, as in:&lt;/p&gt;
+
+&lt;pre&gt;
+  // Some comments
+  line 1 of code
+  line 2 of code
+  line 3 of code
+&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;pre&amp;gt;
+  &amp;lt;code&amp;gt;
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+  &amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;block-code-fences:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Block code &amp;ldquo;fences&amp;rdquo;&lt;/h3&gt;
+
+&lt;p&gt;Use &amp;ldquo;fences&amp;rdquo;  &lt;code&gt;```&lt;/code&gt; to block in multiple lines of code.&lt;/p&gt;
+
+&lt;pre&gt;
+``` markup
+Sample text here...
+```
+&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Sample text here...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;pre&amp;gt;
+  &amp;lt;code&amp;gt;Sample text here...&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;syntax-highlighting:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Syntax highlighting&lt;/h3&gt;
+
+&lt;p&gt;GFM, or &amp;ldquo;GitHub Flavored Markdown&amp;rdquo; also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code &amp;ldquo;fence&amp;rdquo;, `&lt;code&gt;js&lt;/code&gt;, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:&lt;/p&gt;
+
+&lt;pre&gt;
+```js
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: &#39;docs/assets&#39;,
+      data: &#39;src/data/*.{json,yml}&#39;,
+      helpers: &#39;src/custom-helpers.js&#39;,
+      partials: [&#39;src/partials/**/*.{hbs,md}&#39;]
+    },
+    pages: {
+      options: {
+        layout: &#39;default.hbs&#39;
+      },
+      files: {
+        &#39;./&#39;: [&#39;src/templates/pages/index.hbs&#39;]
+      }
+    }
+  }
+};
+```
+&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;grunt.initConfig({
+  assemble: {
+    options: {
+      assets: &#39;docs/assets&#39;,
+      data: &#39;src/data/*.{json,yml}&#39;,
+      helpers: &#39;src/custom-helpers.js&#39;,
+      partials: [&#39;src/partials/**/*.{hbs,md}&#39;]
+    },
+    pages: {
+      options: {
+        layout: &#39;default.hbs&#39;
+      },
+      files: {
+        &#39;./&#39;: [&#39;src/templates/pages/index.hbs&#39;]
+      }
+    }
+  }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tables:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Option&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;engine&lt;/td&gt;
+&lt;td&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ext&lt;/td&gt;
+&lt;td&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;And this HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table&amp;gt;
+  &amp;lt;tr&amp;gt;
+    &amp;lt;th&amp;gt;Option&amp;lt;/th&amp;gt;
+    &amp;lt;th&amp;gt;Description&amp;lt;/th&amp;gt;
+  &amp;lt;/tr&amp;gt;
+  &amp;lt;tr&amp;gt;
+    &amp;lt;td&amp;gt;data&amp;lt;/td&amp;gt;
+    &amp;lt;td&amp;gt;path to data files to supply the data that will be passed into templates.&amp;lt;/td&amp;gt;
+  &amp;lt;/tr&amp;gt;
+  &amp;lt;tr&amp;gt;
+    &amp;lt;td&amp;gt;engine&amp;lt;/td&amp;gt;
+    &amp;lt;td&amp;gt;engine to be used for processing templates. Handlebars is the default.&amp;lt;/td&amp;gt;
+  &amp;lt;/tr&amp;gt;
+  &amp;lt;tr&amp;gt;
+    &amp;lt;td&amp;gt;ext&amp;lt;/td&amp;gt;
+    &amp;lt;td&amp;gt;extension to be used for dest files.&amp;lt;/td&amp;gt;
+  &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;right-aligned-text:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Right aligned text&lt;/h3&gt;
+
+&lt;p&gt;Adding a colon on the right side of the dashes below any heading will right align text for that column.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;Option&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;data&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;engine&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;ext&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;links:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Links&lt;/h2&gt;
+
+&lt;h3 id=&#34;basic-link:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basic link&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Assemble](http://assemble.io)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to (hover over the link, there is no tooltip):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://assemble.io&#34;&gt;Assemble&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;http://assemble.io&amp;quot;&amp;gt;Assemble&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;add-a-title:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Add a title&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Upstage](https://github.com/upstage/ &amp;quot;Visit Upstage!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Renders to (hover over the link, there should be a tooltip):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/upstage/&#34; title=&#34;Visit Upstage!&#34;&gt;Upstage&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;https://github.com/upstage/&amp;quot; title=&amp;quot;Visit Upstage!&amp;quot;&amp;gt;Upstage&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;named-anchors:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Named Anchors&lt;/h3&gt;
+
+&lt;p&gt;Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# Table of Contents
+  * [Chapter 1](#chapter-1)
+  * [Chapter 2](#chapter-2)
+  * [Chapter 3](#chapter-3)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will jump to these sections:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;## Chapter 1 &amp;lt;a id=&amp;quot;chapter-1&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+
+## Chapter 2 &amp;lt;a id=&amp;quot;chapter-2&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+
+## Chapter 3 &amp;lt;a id=&amp;quot;chapter-3&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.&lt;/p&gt;
+
+&lt;h2 id=&#34;images:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;Images have a similar syntax to links but include a preceding exclamation point.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Minion](http://octodex.github.com/images/minion.png)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png&#34; alt=&#34;Minion&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &amp;quot;The Stormtroopocat&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg&#34; alt=&#34;Alt text&#34; title=&#34;The Stormtroopocat&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like links, Images also have a footnote style syntax&lt;/p&gt;
+
+&lt;h3 id=&#34;alternative-usage-note-images:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Alternative usage : note images&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/dojocat.jpg&#34; alt=&#34;Alt text&#34; title=&#34;The Dojocat&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With a reference later in the document defining the URL location:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: http://octodex.github.com/images/dojocat.jpg  &amp;quot;The Dojocat&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;resizing-image:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Resizing image&lt;/h3&gt;
+
+&lt;p&gt;Add HTTP parameters &lt;code&gt;width&lt;/code&gt; and/or &lt;code&gt;height&lt;/code&gt; to the link image to resize the image. Values are CSS values (default is &lt;code&gt;auto&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Minion](http://octodex.github.com/images/minion.png?width=20%)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png?width=20%&#34; alt=&#34;Minion&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Minion](http://octodex.github.com/images/minion.png?height=50px)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png?height=50px&#34; alt=&#34;Minion&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Minion](http://octodex.github.com/images/minion.png?height=50px&amp;amp;width=300px)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png?height=50px&amp;amp;width=300px&#34; alt=&#34;Minion&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;add-css-classes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Add CSS classes&lt;/h3&gt;
+
+&lt;p&gt;Add a HTTP &lt;code&gt;classes&lt;/code&gt; parameter to the link image to add CSS classes. &lt;code&gt;shadow&lt;/code&gt;and &lt;code&gt;border&lt;/code&gt; are available but you could define other ones.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![stormtroopocat](http://octodex.github.com/images/stormtroopocat.jpg?classes=shadow)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg?width=40%&amp;amp;classes=shadow&#34; alt=&#34;stormtroopocat&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![stormtroopocat](http://octodex.github.com/images/stormtroopocat.jpg?classes=border)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg?width=40%&amp;amp;classes=border&#34; alt=&#34;stormtroopocat&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![stormtroopocat](http://octodex.github.com/images/stormtroopocat.jpg?classes=border,shadow)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg?width=40%&amp;amp;classes=border,shadow&#34; alt=&#34;stormtroopocat&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://matcornic.github.io/hugo-learn-doc/cont/shortcodes/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://matcornic.github.io/hugo-learn-doc/cont/shortcodes/</guid>
+      <description>
+
+&lt;p&gt;Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.&lt;/p&gt;
+
+&lt;p&gt;But this happens to be a bad idea. Everyone uses Markdown because it&amp;rsquo;s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.&lt;/p&gt;
+
+&lt;p&gt;To avoid this limitations, Hugo created &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. A shortcode is a simple snippet inside a page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides multiple shortcodes on top of existing ones.&lt;/p&gt;
+
+&lt;h2 id=&#34;notice:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Notice&lt;/h2&gt;
+
+&lt;p&gt;The notice shortcode shows 4 types of disclaimers to help you structure your page.&lt;/p&gt;
+
+&lt;h3 id=&#34;note:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Note&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% notice note %}}
+A notice disclaimer
+{{% /notice %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;A notice disclaimer&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;info:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Info&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% notice info %}}
+An information disclaimer
+{{% /notice %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;An information disclaimer&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;tip:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Tip&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% notice tip %}}
+A tip disclaimer
+{{% /notice %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;A tip disclaimer&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;warning:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Warning&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% notice warning %}}
+An warning disclaimer
+{{% /notice %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;A warning disclaimer&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;button:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Button&lt;/h2&gt;
+
+&lt;p&gt;Button is a just a clickable button with optional icon.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% button href=&amp;quot;https://getgrav.org/&amp;quot; %}}Get Grav{{% /button %}}
+{{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fa fa-play&amp;quot; %}}Get Grav with icon{{% /button %}}
+{{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fa fa-share&amp;quot; %}}Get Grav with icon right{{% /button %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a  href=&#34;https://getgrav.org/&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
+  
+  
+  
+  Get Grav
+  
+&lt;/a&gt;
+
+&lt;a  href=&#34;https://getgrav.org/&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
+  
+  
+  
+    
+  &lt;i class=&#34;fa fa-play&#34;&gt;&lt;/i&gt;
+    
+  
+  Get Grav with icon
+  
+&lt;/a&gt;
+
+&lt;a  href=&#34;https://getgrav.org/&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
+  
+  
+  
+    
+  
+  Get Grav with icon right
+  
+  &lt;i class=&#34;fa fa-share&#34;&gt;&lt;/i&gt;
+  
+&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Archetypes</title>
+      <link>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</guid>
+      <description>
+
+&lt;p&gt;Using the command: &lt;code&gt;hugo new [relative new content path]&lt;/code&gt;, you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more : &lt;a href=&#34;https://gohugo.io/content/archetypes/&#34;&gt;archetypes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is pre-configured skeleton pages with default front matter. Please refer to the &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/pages/#types:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;documentation&lt;/a&gt; for types of page to understand the differences.&lt;/p&gt;
+
+&lt;h2 id=&#34;chapter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter&lt;/h2&gt;
+
+&lt;p&gt;To create a Chapter page, run either one of the following commands&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Either
+hugo new --kind chapter &amp;lt;name&amp;gt;/index.md
+# Or
+hugo new --kind chapter &amp;lt;name&amp;gt;.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It will create a page with predefined Front-Matter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+chapter: true
+date: 2016-04-10T23:17:49+02:00
+icon: &amp;lt;b&amp;gt;X. &amp;lt;/b&amp;gt;
+next: /next/path
+prev: /prev/path
+title: index
+weight: 0
+---
+
+### Chapter X
+
+# Some Chapter title
+
+Lorem ipsum
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;default:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Default&lt;/h2&gt;
+
+&lt;p&gt;To create a default page, run either one of the following commands&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Either
+hugo new &amp;lt;chapter&amp;gt;/&amp;lt;name&amp;gt;/index.md
+# Or
+hugo new &amp;lt;chapter&amp;gt;/&amp;lt;name&amp;gt;.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It will create a page with predefined Front-Matter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+date: 2016-04-09T17:51:50+02:00
+next: /next/path
+prev: /prev/path
+title: index
+toc: true
+weight: 5
+---
+
+Lorem Ipsum
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Don&amp;rsquo;t forget that Hugo-theme-learn supports only one level under a chapter&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
