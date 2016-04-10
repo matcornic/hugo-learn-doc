@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Hugo Learn Theme"
 theme = "hugo-theme-learn"
 MetaDataFormat = "yaml"
+canonifyurls = true
 
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/docs/content/"
