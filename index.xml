@@ -999,7 +999,13 @@ hugo new basics/second-content/index.md
   author = &amp;quot;&amp;quot;
   # Description of the site, will be used in meta information
   description = &amp;quot;&amp;quot;
+  # Shows a checkmark for visited pages on the menu. Default to false
+  showVisitedLinks = false
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Assets are based on the root of the site. So, don&amp;rsquo;t forget to use Hugo built-in &lt;code&gt;canonifyURLs = true&lt;/code&gt; parameter if you set a &lt;code&gt;baseurl&lt;/code&gt; which includes a component path. Absolutely needed for Github pages like &lt;a href=&#34;http://userid.github.io/project&#34;&gt;http://userid.github.io/project&lt;/a&gt;. Find &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn/issues/3&#34;&gt;More information&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
 
 &lt;h2 id=&#34;style-customization:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Style customization&lt;/h2&gt;
 
