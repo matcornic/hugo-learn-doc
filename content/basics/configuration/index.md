@@ -20,7 +20,13 @@ On top of [Hugo global configuration](https://gohugo.io/overview/configuration/)
   author = ""
   # Description of the site, will be used in meta information
   description = ""
+  # Shows a checkmark for visited pages on the menu. Default to false
+  showVisitedLinks = false
 ```
+
+{{% notice tip %}}
+Assets are based on the root of the site. So, don't forget to use Hugo built-in `canonifyURLs = true` parameter if you set a `baseurl` which includes a component path. Absolutely needed for Github pages like http://userid.github.io/project. Find [More information](https://github.com/matcornic/hugo-theme-learn/issues/3)
+{{% /notice %}}
 
 ## Style customization
 
