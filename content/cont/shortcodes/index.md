@@ -82,7 +82,7 @@ Button is a just a clickable button with optional icon.
 ```
 {{%/* button href="https://getgrav.org/" */%}}Get Grav{{%/* /button */%}}
 {{%/* button href="https://getgrav.org/" icon="fa fa-play" */%}}Get Grav with icon{{%/* /button */%}}
-{{%/* button href="https://getgrav.org/" icon="fa fa-share" */%}}Get Grav with icon right{{%/* /button */%}}
+{{%/* button href="https://getgrav.org/" icon="fa fa-share" icon-position="right" */%}}Get Grav with icon right{{%/* /button */%}}
 ```
 
 {{% button href="https://getgrav.org/" %}}Get Grav{{% /button %}}
