@@ -102,3 +102,38 @@ icon: ""
 Hugo provides a [flexible way](https://gohugo.io/content/ordering/) to handle order for your pages.
 
 The simplest way is to use `weight` parameter in the front matter of your page.
+
+### Menu ordering
+
+If you don't like generated menu ordering, which is done alphabetically by default, you
+can explicitly define sections ordering in `config.toml`.
+
+For site with following `tree content`:
+```
+content/
+├── about
+│   ├── content.md
+│   ├── index.md
+├── bar
+│   ├── index.md
+│   └── mode_bar.md
+├── foo
+│   ├── foo2.md
+│   └── index.md
+└── introduction
+    ├── index.md
+    └── blabla.md
+```
+
+You can set menu ordering as:
+
+1. about
+2. introduction
+3. foo
+4. bar
+
+all you need is to add menu definition in `config.toml`:
+```
+[params]
+  menu = [ "about", "introduction", "foo", "bar" ]
+```
