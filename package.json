@@ -1,0 +1,24 @@
+{
+  "name": "hugo-learn-doc",
+  "version": "1.0.0",
+  "description": "Official documentation of the hugo-theme-learn",
+  "scripts": {
+    "index": "mkdir -p static/json && lunr-hugo -i 'content/**/*.md' -o static/json/search.json -l yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matcornic/hugo-learn-doc.git"
+  },
+  "keywords": [
+    "lunr"
+  ],
+  "author": "Mathieu Cornic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matcornic/hugo-learn-doc/issues"
+  },
+  "homepage": "https://github.com/matcornic/hugo-learn-doc#readme",
+  "devDependencies": {
+    "lunr-hugo": "^0.1.2"
+  }
+}
