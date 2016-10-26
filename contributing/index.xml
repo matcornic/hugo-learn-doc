@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contributings on Hugo Learn Theme</title>
-    <link>https://matcornic.github.io/hugo-learn-doc/contributing/</link>
-    <description>Recent content in Contributings on Hugo Learn Theme</description>
+    <title>Contributing-rsses on Hugo Learn Theme</title>
+    <link>https://matcornic.github.io/hugo-learn-doc/contributing/index.xml</link>
+    <description>Recent content in Contributing-rsses on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:58:30 +0200</lastBuildDate>
@@ -26,7 +26,7 @@
 &lt;li&gt;Contribute to the &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;Hugo-theme-learn&lt;/a&gt; theme itself&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;todo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;TODO&lt;/h2&gt;
+&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Handling more than 2 levels in documentation.&lt;/li&gt;

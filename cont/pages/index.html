@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.15" />
+    <meta name="generator" content="Hugo 0.17" />
     <meta name="description" content="Documentation for Hugo Learn Theme">
 <meta name="author" content="Mathieu Cornic">
 
@@ -16,8 +16,10 @@
     <link href="https://matcornic.github.io/hugo-learn-doc/css/hybrid.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/featherlight.min.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://matcornic.github.io/hugo-learn-doc/css/horsey.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/theme.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/hugo-theme.css" rel="stylesheet">
+    <script src="https://matcornic.github.io/hugo-learn-doc/js/jquery-2.x.min.js"></script>
     <style type="text/css">:root #header + #content > #left > #rlblock_left
     {display:none !important;}</style>
     
@@ -67,14 +69,36 @@
 
 </a>
 
-      
     </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input id="search-by" type="text" placeholder="Search">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/lunr.min.js"></script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/matcornic.github.io\/hugo-learn-doc";
+</script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/search.js"></script>
+
+    
 </div>
 
 
   <div class="highlightable">
     <ul class="topics">
       
+      
+        
+      
+      
+      
+      
+
+      
+        
       
       
       
@@ -132,6 +156,11 @@
       
       
       
+
+      
+        
+      
+      
       
 
       <li class="dd-item  parent" data-nav-id="/cont/">
@@ -187,6 +216,11 @@
       
       
       
+
+      
+        
+      
+      
       
 
       <li class="dd-item  " data-nav-id="/contributing/">
@@ -205,7 +239,7 @@
       
     </ul>
     <hr>
-      
+     
     <section id="footer">
       <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
     </section>
@@ -262,10 +296,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#folders:d680e8a854a7cbad6d490c445cba2eba">Folders</a></li>
-<li><a href="#types:d680e8a854a7cbad6d490c445cba2eba">Types</a></li>
-<li><a href="#front-matter:d680e8a854a7cbad6d490c445cba2eba">Front Matter</a></li>
-<li><a href="#ordering:d680e8a854a7cbad6d490c445cba2eba">Ordering</a></li>
+<li><a href="#folders">Folders</a></li>
+<li><a href="#types">Types</a></li>
+<li><a href="#front-matter">Front Matter</a></li>
+<li><a href="#ordering">Ordering</a>
+<ul>
+<li><a href="#menu-ordering">Menu ordering</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -285,7 +322,7 @@
 
 <p>In <strong>Hugo</strong>, pages are the core of your site. Once it is configure, pages are definitely the added value to your documentation site.</p>
 
-<h2 id="folders:d680e8a854a7cbad6d490c445cba2eba">Folders</h2>
+<h2 id="folders">Folders</h2>
 
 <p>Organize your site like <a href="https://gohugo.io/content/organization/">any other Hugo project</a>. Typically, you will have a <em>content</em> folder with all your pages.</p>
 
@@ -306,7 +343,7 @@
 </div>
 
 
-<h2 id="types:d680e8a854a7cbad6d490c445cba2eba">Types</h2>
+<h2 id="types">Types</h2>
 
 <p><strong>Hugo-theme-learn</strong> defines two types of pages. <em>Default</em> and <em>Chapter</em>.</p>
 
@@ -350,11 +387,11 @@ This current documentation has been statically generated with Hugo with a simple
 ![Grav Overview](images/grav-overview.png?width=60%)
 </code></pre>
 
-<p>To tell <strong>Hugo-theme-learn</strong> to consider a page as a chapter, just set <code>chapter: true</code> in the <a href="#front-matter:d680e8a854a7cbad6d490c445cba2eba">front-matter headers</a>.</p>
+<p>To tell <strong>Hugo-theme-learn</strong> to consider a page as a chapter, just set <code>chapter: true</code> in the <a href="#front-matter">front-matter headers</a>.</p>
 
 <p><strong>Hugo-theme-learn</strong> provides <a href="https://matcornic.github.io/hugo-learn-doc/cont/archetypes">archetypes</a> to help you create this kind of pages.</p>
 
-<h2 id="front-matter:d680e8a854a7cbad6d490c445cba2eba">Front Matter</h2>
+<h2 id="front-matter">Front Matter</h2>
 
 <p>Each Hugo page has to define a <a href="https://gohugo.io/content/front-matter/">Front Matter</a> in <em>yaml</em>, <em>toml</em> or <em>json</em>.</p>
 
@@ -374,11 +411,48 @@ icon: &quot;&quot;
 +++
 </code></pre>
 
-<h2 id="ordering:d680e8a854a7cbad6d490c445cba2eba">Ordering</h2>
+<h2 id="ordering">Ordering</h2>
 
 <p>Hugo provides a <a href="https://gohugo.io/content/ordering/">flexible way</a> to handle order for your pages.</p>
 
 <p>The simplest way is to use <code>weight</code> parameter in the front matter of your page.</p>
+
+<h3 id="menu-ordering">Menu ordering</h3>
+
+<p>If you don&rsquo;t like generated menu ordering, which is done alphabetically by default, you
+can explicitly define sections ordering in <code>config.toml</code>.</p>
+
+<p>For site with following <code>tree content</code>:</p>
+
+<pre><code>content/
+├── about
+│   ├── content.md
+│   ├── index.md
+├── bar
+│   ├── index.md
+│   └── mode_bar.md
+├── foo
+│   ├── foo2.md
+│   └── index.md
+└── introduction
+    ├── index.md
+    └── blabla.md
+</code></pre>
+
+<p>You can set menu ordering as:</p>
+
+<ol>
+<li>about</li>
+<li>introduction</li>
+<li>foo</li>
+<li>bar</li>
+</ol>
+
+<p>all you need is to add menu definition in <code>config.toml</code>:</p>
+
+<pre><code>[params]
+  menu = [ &quot;about&quot;, &quot;introduction&quot;, &quot;foo&quot;, &quot;bar&quot; ]
+</code></pre>
 
 
       
@@ -394,7 +468,6 @@ icon: &quot;&quot;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://matcornic.github.io/hugo-learn-doc/js/jquery-2.x.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/clipboard.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/perfect-scrollbar.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/perfect-scrollbar.jquery.min.js"></script>

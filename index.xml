@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Learn Theme</title>
-    <link>https://matcornic.github.io/hugo-learn-doc/</link>
+    <link>https://matcornic.github.io/hugo-learn-doc/index.xml</link>
     <description>Recent content on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -16,9 +16,9 @@
       <guid>https://matcornic.github.io/hugo-learn-doc/basics/</guid>
       <description>
 
-&lt;h3 id=&#34;chapter-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 
-&lt;h1 id=&#34;basics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basics&lt;/h1&gt;
+&lt;h1 id=&#34;basics&#34;&gt;Basics&lt;/h1&gt;
 
 &lt;p&gt;Discover what this Hugo theme is all about and the core-concepts behind it.&lt;/p&gt;
 </description>
@@ -32,9 +32,9 @@
       <guid>https://matcornic.github.io/hugo-learn-doc/cont/</guid>
       <description>
 
-&lt;h3 id=&#34;chapter-2:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h3&gt;
 
-&lt;h1 id=&#34;content:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Content&lt;/h1&gt;
+&lt;h1 id=&#34;content&#34;&gt;Content&lt;/h1&gt;
 
 &lt;p&gt;Find out how to create and organize your content quickly and intuitively.&lt;/p&gt;
 </description>
@@ -57,7 +57,7 @@
 &lt;li&gt;Contribute to the &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;Hugo-theme-learn&lt;/a&gt; theme itself&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;todo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;TODO&lt;/h2&gt;
+&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Handling more than 2 levels in documentation.&lt;/li&gt;
@@ -78,7 +78,7 @@
 
 &lt;p&gt;In &lt;strong&gt;Hugo&lt;/strong&gt;, pages are the core of your site. Once it is configure, pages are definitely the added value to your documentation site.&lt;/p&gt;
 
-&lt;h2 id=&#34;folders:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Folders&lt;/h2&gt;
+&lt;h2 id=&#34;folders&#34;&gt;Folders&lt;/h2&gt;
 
 &lt;p&gt;Organize your site like &lt;a href=&#34;https://gohugo.io/content/organization/&#34;&gt;any other Hugo project&lt;/a&gt;. Typically, you will have a &lt;em&gt;content&lt;/em&gt; folder with all your pages.&lt;/p&gt;
 
@@ -99,7 +99,7 @@
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;types:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Types&lt;/h2&gt;
+&lt;h2 id=&#34;types&#34;&gt;Types&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; defines two types of pages. &lt;em&gt;Default&lt;/em&gt; and &lt;em&gt;Chapter&lt;/em&gt;.&lt;/p&gt;
 
@@ -143,11 +143,11 @@ This current documentation has been statically generated with Hugo with a simple
 ![Grav Overview](images/grav-overview.png?width=60%)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To tell &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; to consider a page as a chapter, just set &lt;code&gt;chapter: true&lt;/code&gt; in the &lt;a href=&#34;#front-matter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;front-matter headers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To tell &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; to consider a page as a chapter, just set &lt;code&gt;chapter: true&lt;/code&gt; in the &lt;a href=&#34;#front-matter&#34;&gt;front-matter headers&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/archetypes&#34;&gt;archetypes&lt;/a&gt; to help you create this kind of pages.&lt;/p&gt;
 
-&lt;h2 id=&#34;front-matter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Front Matter&lt;/h2&gt;
+&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;
 
 &lt;p&gt;Each Hugo page has to define a &lt;a href=&#34;https://gohugo.io/content/front-matter/&#34;&gt;Front Matter&lt;/a&gt; in &lt;em&gt;yaml&lt;/em&gt;, &lt;em&gt;toml&lt;/em&gt; or &lt;em&gt;json&lt;/em&gt;.&lt;/p&gt;
 
@@ -167,11 +167,48 @@ icon: &amp;quot;&amp;quot;
 +++
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ordering:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ordering&lt;/h2&gt;
+&lt;h2 id=&#34;ordering&#34;&gt;Ordering&lt;/h2&gt;
 
 &lt;p&gt;Hugo provides a &lt;a href=&#34;https://gohugo.io/content/ordering/&#34;&gt;flexible way&lt;/a&gt; to handle order for your pages.&lt;/p&gt;
 
 &lt;p&gt;The simplest way is to use &lt;code&gt;weight&lt;/code&gt; parameter in the front matter of your page.&lt;/p&gt;
+
+&lt;h3 id=&#34;menu-ordering&#34;&gt;Menu ordering&lt;/h3&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t like generated menu ordering, which is done alphabetically by default, you
+can explicitly define sections ordering in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For site with following &lt;code&gt;tree content&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;content/
+├── about
+│   ├── content.md
+│   ├── index.md
+├── bar
+│   ├── index.md
+│   └── mode_bar.md
+├── foo
+│   ├── foo2.md
+│   └── index.md
+└── introduction
+    ├── index.md
+    └── blabla.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can set menu ordering as:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;about&lt;/li&gt;
+&lt;li&gt;introduction&lt;/li&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;all you need is to add menu definition in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[params]
+  menu = [ &amp;quot;about&amp;quot;, &amp;quot;introduction&amp;quot;, &amp;quot;foo&amp;quot;, &amp;quot;bar&amp;quot; ]
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -214,7 +251,7 @@ icon: &amp;quot;&amp;quot;
       <description>
 
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;This page is a shameful copy of the great &lt;a href=&#34;http://learn.getgrav.org/content/markdown&#34;&gt;Grav original page&lt;/a&gt;.
-Only difference is information about image customization (&lt;a href=&#34;#resizing-image:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;resizing&lt;/a&gt;, &lt;a href=&#34;#add-css-classes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;add CSS classes&lt;/a&gt;&amp;hellip;)&lt;/p&gt;
+Only difference is information about image customization (&lt;a href=&#34;#resizing-image&#34;&gt;resizing&lt;/a&gt;, &lt;a href=&#34;#add-css-classes&#34;&gt;add CSS classes&lt;/a&gt;&amp;hellip;)&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -248,7 +285,7 @@ Only difference is information about image customization (&lt;a href=&#34;#resiz
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;headings:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Headings&lt;/h2&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
 
 &lt;p&gt;Headings from &lt;code&gt;h1&lt;/code&gt; through &lt;code&gt;h6&lt;/code&gt; are constructed with a &lt;code&gt;#&lt;/code&gt; for each level:&lt;/p&gt;
 
@@ -262,17 +299,17 @@ Only difference is information about image customization (&lt;a href=&#34;#resiz
 
 &lt;p&gt;Renders to:&lt;/p&gt;
 
-&lt;h1 id=&#34;h1-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h1 Heading&lt;/h1&gt;
+&lt;h1 id=&#34;h1-heading&#34;&gt;h1 Heading&lt;/h1&gt;
 
-&lt;h2 id=&#34;h2-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h2 Heading&lt;/h2&gt;
+&lt;h2 id=&#34;h2-heading&#34;&gt;h2 Heading&lt;/h2&gt;
 
-&lt;h3 id=&#34;h3-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h3 Heading&lt;/h3&gt;
+&lt;h3 id=&#34;h3-heading&#34;&gt;h3 Heading&lt;/h3&gt;
 
-&lt;h4 id=&#34;h4-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h4 Heading&lt;/h4&gt;
+&lt;h4 id=&#34;h4-heading&#34;&gt;h4 Heading&lt;/h4&gt;
 
-&lt;h5 id=&#34;h5-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h5 Heading&lt;/h5&gt;
+&lt;h5 id=&#34;h5-heading&#34;&gt;h5 Heading&lt;/h5&gt;
 
-&lt;h6 id=&#34;h6-heading:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;h6 Heading&lt;/h6&gt;
+&lt;h6 id=&#34;h6-heading&#34;&gt;h6 Heading&lt;/h6&gt;
 
 &lt;p&gt;HTML:&lt;/p&gt;
 
@@ -284,7 +321,7 @@ Only difference is information about image customization (&lt;a href=&#34;#resiz
 &amp;lt;h6&amp;gt;h6 Heading&amp;lt;/h6&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;comments:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Comments&lt;/h2&gt;
+&lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;
 
 &lt;p&gt;Comments should be HTML compatible&lt;/p&gt;
 
@@ -299,7 +336,7 @@ This is a comment
 This is a comment
 --&gt;
 
-&lt;h2 id=&#34;horizontal-rules:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;h2 id=&#34;horizontal-rules&#34;&gt;Horizontal Rules&lt;/h2&gt;
 
 &lt;p&gt;The HTML &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element is for creating a &amp;ldquo;thematic break&amp;rdquo; between paragraph-level elements. In markdown, you can create a &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; with any of the following:&lt;/p&gt;
 
@@ -317,7 +354,7 @@ This is a comment
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;body-copy:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Body Copy&lt;/h2&gt;
+&lt;h2 id=&#34;body-copy&#34;&gt;Body Copy&lt;/h2&gt;
 
 &lt;p&gt;Body copy written as normal, plain text will be wrapped with &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; tags in the rendered HTML.&lt;/p&gt;
 
@@ -331,9 +368,9 @@ This is a comment
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;emphasis:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Emphasis&lt;/h2&gt;
+&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
 
-&lt;h3 id=&#34;bold:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Bold&lt;/h3&gt;
+&lt;h3 id=&#34;bold&#34;&gt;Bold&lt;/h3&gt;
 
 &lt;p&gt;For emphasizing a snippet of text with a heavier font-weight.&lt;/p&gt;
 
@@ -351,7 +388,7 @@ This is a comment
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;strong&amp;gt;rendered as bold text&amp;lt;/strong&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;italics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Italics&lt;/h3&gt;
+&lt;h3 id=&#34;italics&#34;&gt;Italics&lt;/h3&gt;
 
 &lt;p&gt;For emphasizing a snippet of text with italics.&lt;/p&gt;
 
@@ -369,7 +406,7 @@ This is a comment
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;em&amp;gt;rendered as italicized text&amp;lt;/em&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;strikethrough:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;strikethrough&lt;/h3&gt;
+&lt;h3 id=&#34;strikethrough&#34;&gt;strikethrough&lt;/h3&gt;
 
 &lt;p&gt;In GFM (GitHub flavored Markdown) you can do strikethroughs.&lt;/p&gt;
 
@@ -385,7 +422,7 @@ This is a comment
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;del&amp;gt;Strike through this text.&amp;lt;/del&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;blockquotes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
 
 &lt;p&gt;For quoting blocks of content from another source within your document.&lt;/p&gt;
 
@@ -424,15 +461,15 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;notices:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Notices&lt;/h2&gt;
+&lt;h2 id=&#34;notices&#34;&gt;Notices&lt;/h2&gt;
 
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;The old mechanism for notices overriding the block quote syntax (&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;) has been deprecated.  Notices are now handled via a dedicated plugin called &lt;a href=&#34;https://github.com/getgrav/grav-plugin-markdown-notices&#34;&gt;Markdown Notices&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;lists:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Lists&lt;/h2&gt;
+&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
 
-&lt;h3 id=&#34;unordered:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Unordered&lt;/h3&gt;
+&lt;h3 id=&#34;unordered&#34;&gt;Unordered&lt;/h3&gt;
 
 &lt;p&gt;A list of items in which the order of the items does not explicitly matter.&lt;/p&gt;
 
@@ -500,7 +537,7 @@ odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac 
 &amp;lt;/ul&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;ordered:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ordered&lt;/h3&gt;
+&lt;h3 id=&#34;ordered&#34;&gt;Ordered&lt;/h3&gt;
 
 &lt;p&gt;A list of items in which the order of items does explicitly matter.&lt;/p&gt;
 
@@ -566,9 +603,9 @@ odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac 
 &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 
-&lt;h3 id=&#34;inline-code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Inline code&lt;/h3&gt;
+&lt;h3 id=&#34;inline-code&#34;&gt;Inline code&lt;/h3&gt;
 
 &lt;p&gt;Wrap inline snippets of code with &lt;code&gt;`&lt;/code&gt;.&lt;/p&gt;
 
@@ -584,7 +621,7 @@ odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;In this example, &amp;lt;code&amp;gt;&amp;amp;lt;section&amp;amp;gt;&amp;amp;lt;/section&amp;amp;gt;&amp;lt;/code&amp;gt; should be wrapped with &amp;lt;strong&amp;gt;code&amp;lt;/strong&amp;gt;.&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;indented-code:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Indented code&lt;/h3&gt;
+&lt;h3 id=&#34;indented-code&#34;&gt;Indented code&lt;/h3&gt;
 
 &lt;p&gt;Or indent several lines of code by at least four spaces, as in:&lt;/p&gt;
 
@@ -615,7 +652,7 @@ line 3 of code
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;block-code-fences:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Block code &amp;ldquo;fences&amp;rdquo;&lt;/h3&gt;
+&lt;h3 id=&#34;block-code-fences&#34;&gt;Block code &amp;ldquo;fences&amp;rdquo;&lt;/h3&gt;
 
 &lt;p&gt;Use &amp;ldquo;fences&amp;rdquo;  &lt;code&gt;```&lt;/code&gt; to block in multiple lines of code.&lt;/p&gt;
 
@@ -635,7 +672,7 @@ Sample text here...
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;syntax-highlighting:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Syntax highlighting&lt;/h3&gt;
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
 
 &lt;p&gt;GFM, or &amp;ldquo;GitHub Flavored Markdown&amp;rdquo; also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code &amp;ldquo;fence&amp;rdquo;, `&lt;code&gt;js&lt;/code&gt;, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:&lt;/p&gt;
 
@@ -684,7 +721,7 @@ grunt.initConfig({
 };
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;tables:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Tables&lt;/h2&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
 
 &lt;p&gt;Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.&lt;/p&gt;
 
@@ -745,7 +782,7 @@ grunt.initConfig({
 &amp;lt;/table&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;right-aligned-text:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Right aligned text&lt;/h3&gt;
+&lt;h3 id=&#34;right-aligned-text&#34;&gt;Right aligned text&lt;/h3&gt;
 
 &lt;p&gt;Adding a colon on the right side of the dashes below any heading will right align text for that column.&lt;/p&gt;
 
@@ -782,9 +819,9 @@ grunt.initConfig({
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;links:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
-&lt;h3 id=&#34;basic-link:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basic link&lt;/h3&gt;
+&lt;h3 id=&#34;basic-link&#34;&gt;Basic link&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Assemble](http://assemble.io)
 &lt;/code&gt;&lt;/pre&gt;
@@ -798,7 +835,7 @@ grunt.initConfig({
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;http://assemble.io&amp;quot;&amp;gt;Assemble&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;add-a-title:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Add a title&lt;/h3&gt;
+&lt;h3 id=&#34;add-a-title&#34;&gt;Add a title&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Upstage](https://github.com/upstage/ &amp;quot;Visit Upstage!&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -812,7 +849,7 @@ grunt.initConfig({
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;https://github.com/upstage/&amp;quot; title=&amp;quot;Visit Upstage!&amp;quot;&amp;gt;Upstage&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;named-anchors:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Named Anchors&lt;/h3&gt;
+&lt;h3 id=&#34;named-anchors&#34;&gt;Named Anchors&lt;/h3&gt;
 
 &lt;p&gt;Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:&lt;/p&gt;
 
@@ -836,7 +873,7 @@ Content for chapter one.
 
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.&lt;/p&gt;
 
-&lt;h2 id=&#34;images:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Images&lt;/h2&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
 
 &lt;p&gt;Images have a similar syntax to links but include a preceding exclamation point.&lt;/p&gt;
 
@@ -854,7 +891,7 @@ Content for chapter one.
 
 &lt;p&gt;Like links, Images also have a footnote style syntax&lt;/p&gt;
 
-&lt;h3 id=&#34;alternative-usage-note-images:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Alternative usage : note images&lt;/h3&gt;
+&lt;h3 id=&#34;alternative-usage-note-images&#34;&gt;Alternative usage : note images&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Alt text][id]
 &lt;/code&gt;&lt;/pre&gt;
@@ -866,7 +903,7 @@ Content for chapter one.
 &lt;pre&gt;&lt;code&gt;[id]: http://octodex.github.com/images/dojocat.jpg  &amp;quot;The Dojocat&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;resizing-image:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Resizing image&lt;/h3&gt;
+&lt;h3 id=&#34;resizing-image&#34;&gt;Resizing image&lt;/h3&gt;
 
 &lt;p&gt;Add HTTP parameters &lt;code&gt;width&lt;/code&gt; and/or &lt;code&gt;height&lt;/code&gt; to the link image to resize the image. Values are CSS values (default is &lt;code&gt;auto&lt;/code&gt;).&lt;/p&gt;
 
@@ -885,7 +922,7 @@ Content for chapter one.
 
 &lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png?height=50px&amp;amp;width=300px&#34; alt=&#34;Minion&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;add-css-classes:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Add CSS classes&lt;/h3&gt;
+&lt;h3 id=&#34;add-css-classes&#34;&gt;Add CSS classes&lt;/h3&gt;
 
 &lt;p&gt;Add a HTTP &lt;code&gt;classes&lt;/code&gt; parameter to the link image to add CSS classes. &lt;code&gt;shadow&lt;/code&gt;and &lt;code&gt;border&lt;/code&gt; are available but you could define other ones.&lt;/p&gt;
 
@@ -916,34 +953,34 @@ Content for chapter one.
 
 &lt;p&gt;The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you to train by following this &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;great documentation for beginners&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;create-your-project:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your project&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-project&#34;&gt;Create your project&lt;/h2&gt;
 
 &lt;p&gt;Hugo provides a &lt;code&gt;new&lt;/code&gt; command to create a new website.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo new site &amp;lt;new_project&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;install-the-theme:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Install the theme&lt;/h2&gt;
+&lt;h2 id=&#34;install-the-theme&#34;&gt;Install the theme&lt;/h2&gt;
 
 &lt;p&gt;Install the &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; theme by following &lt;a href=&#34;https://gohugo.io/themes/installing/&#34;&gt;this documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme&amp;rsquo;s repository is: &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn.git&#34;&gt;https://github.com/matcornic/hugo-theme-learn.git&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;basic-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basic configuration&lt;/h2&gt;
+&lt;h2 id=&#34;basic-configuration&#34;&gt;Basic configuration&lt;/h2&gt;
 
 &lt;p&gt;When building the website, you can set a theme by using &lt;code&gt;--theme&lt;/code&gt; option. We suggest you to edit your configuration file and set the theme by default. Example with &lt;code&gt;config.toml&lt;/code&gt; format.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;theme = &amp;quot;hugo-theme-learn&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;create-your-first-chapter-page:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first chapter page&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-first-chapter-page&#34;&gt;Create your first chapter page&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo new --kind chapter basics/index.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;create-your-first-content-pages:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first content pages&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-first-content-pages&#34;&gt;Create your first content pages&lt;/h2&gt;
 
 &lt;p&gt;Then, create content pages inside the previous chapter. Here are two ways to create content in the chapter :&lt;/p&gt;
 
@@ -951,7 +988,33 @@ Content for chapter one.
 hugo new basics/second-content/index.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;launching-the-website:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Launching the website&lt;/h2&gt;
+&lt;h2 id=&#34;enable-search-functionality&#34;&gt;Enable search functionality&lt;/h2&gt;
+
+&lt;p&gt;To use the &lt;code&gt;search&lt;/code&gt; functionality, you just have to put a &lt;code&gt;lunr&lt;/code&gt; index which respects this format :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
+    {
+        &amp;quot;uri&amp;quot;: &amp;quot;/docs/01-start/index&amp;quot;,
+        &amp;quot;title&amp;quot;: &amp;quot;Get started&amp;quot;,
+        &amp;quot;content&amp;quot;: &amp;quot;\n\nGet started\n\nAll you need to know...\n&amp;quot;,
+        &amp;quot;tags&amp;quot;: [&amp;quot;start&amp;quot;, &amp;quot;intro&amp;quot;]
+    },
+    ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;into a &lt;code&gt;static/json/search.json&lt;/code&gt; file in your hugo project.&lt;/p&gt;
+
+&lt;p&gt;And set &lt;code&gt;search = true&lt;/code&gt; in your config.toml&lt;/p&gt;
+
+&lt;p&gt;To generate your lunr index, you can see this project &lt;a href=&#34;https://github.com/gwleclerc/lunr-hugo&#34;&gt;https://github.com/gwleclerc/lunr-hugo&lt;/a&gt; which parse your markdown files and extract toml and yaml headers to create index with corresponding format.&lt;/p&gt;
+
+&lt;p&gt;In order to generate the index of your static site launch the following comand after installing &lt;code&gt;lunr-hugo&lt;/code&gt; using &lt;code&gt;npm&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    lunr-hugo -i &amp;quot;&amp;lt;content directory&amp;gt;/**/*.md&amp;quot; -o static/json/search.json -l &amp;lt;header format (yaml or toml)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;launching-the-website&#34;&gt;Launching the website&lt;/h2&gt;
 
 &lt;p&gt;Launch the following command&lt;/p&gt;
 
@@ -987,7 +1050,7 @@ hugo new basics/second-content/index.md
       <guid>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</guid>
       <description>
 
-&lt;h2 id=&#34;site-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Site configuration&lt;/h2&gt;
+&lt;h2 id=&#34;site-configuration&#34;&gt;Site configuration&lt;/h2&gt;
 
 &lt;p&gt;On top of &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Hugo global configuration&lt;/a&gt;, &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; lets you define the following parameters :&lt;/p&gt;
 
@@ -1007,7 +1070,7 @@ hugo new basics/second-content/index.md
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;style-customization:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Style customization&lt;/h2&gt;
+&lt;h2 id=&#34;style-customization&#34;&gt;Style customization&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; has been built to be as configurable as possible by defining multiple &lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;partials&lt;/a&gt;&lt;/p&gt;
 
@@ -1026,7 +1089,7 @@ hugo new basics/second-content/index.md
 &lt;li&gt;&lt;em&gt;toc&lt;/em&gt;: table of contents&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;change-the-logo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the logo&lt;/h3&gt;
+&lt;h3 id=&#34;change-the-logo&#34;&gt;Change the logo&lt;/h3&gt;
 
 &lt;p&gt;Create a new file in &lt;code&gt;layouts/partials/&lt;/code&gt; named &lt;code&gt;logo.html&lt;/code&gt;. Then write any HTML you want.
 You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image created under the &lt;em&gt;static&lt;/em&gt; folder, or you could paste a SVG definition !&lt;/p&gt;
@@ -1035,7 +1098,7 @@ You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image cr
 &lt;/div&gt;
 
 
-&lt;h3 id=&#34;change-the-favicon:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the favicon&lt;/h3&gt;
+&lt;h3 id=&#34;change-the-favicon&#34;&gt;Change the favicon&lt;/h3&gt;
 
 &lt;p&gt;If your favicon is a png, just drop off your image in your local &lt;code&gt;static/images/&lt;/code&gt; folder and names it &lt;code&gt;favicon.png&lt;/code&gt;&lt;/p&gt;
 
@@ -1044,7 +1107,7 @@ You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image cr
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;/images/favicon.png&amp;quot; type=&amp;quot;image/x-icon&amp;quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;change-default-colors:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change default colors&lt;/h3&gt;
+&lt;h3 id=&#34;change-default-colors&#34;&gt;Change default colors&lt;/h3&gt;
 
 &lt;p&gt;To change default colors, you will have to add a new css file. In order to do that :&lt;/p&gt;
 
@@ -1101,11 +1164,11 @@ a:hover {
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides multiple shortcodes on top of existing ones.&lt;/p&gt;
 
-&lt;h2 id=&#34;notice:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Notice&lt;/h2&gt;
+&lt;h2 id=&#34;notice&#34;&gt;Notice&lt;/h2&gt;
 
 &lt;p&gt;The notice shortcode shows 4 types of disclaimers to help you structure your page.&lt;/p&gt;
 
-&lt;h3 id=&#34;note:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Note&lt;/h3&gt;
+&lt;h3 id=&#34;note&#34;&gt;Note&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;{{% notice note %}}
 A notice disclaimer
@@ -1118,7 +1181,7 @@ A notice disclaimer
 &lt;/div&gt;
 
 
-&lt;h3 id=&#34;info:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Info&lt;/h3&gt;
+&lt;h3 id=&#34;info&#34;&gt;Info&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;{{% notice info %}}
 An information disclaimer
@@ -1131,7 +1194,7 @@ An information disclaimer
 &lt;/div&gt;
 
 
-&lt;h3 id=&#34;tip:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Tip&lt;/h3&gt;
+&lt;h3 id=&#34;tip&#34;&gt;Tip&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;{{% notice tip %}}
 A tip disclaimer
@@ -1144,7 +1207,7 @@ A tip disclaimer
 &lt;/div&gt;
 
 
-&lt;h3 id=&#34;warning:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Warning&lt;/h3&gt;
+&lt;h3 id=&#34;warning&#34;&gt;Warning&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;{{% notice warning %}}
 An warning disclaimer
@@ -1157,13 +1220,13 @@ An warning disclaimer
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;button:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Button&lt;/h2&gt;
+&lt;h2 id=&#34;button&#34;&gt;Button&lt;/h2&gt;
 
 &lt;p&gt;Button is a just a clickable button with optional icon.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{{% button href=&amp;quot;https://getgrav.org/&amp;quot; %}}Get Grav{{% /button %}}
 {{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fa fa-play&amp;quot; %}}Get Grav with icon{{% /button %}}
-{{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fa fa-share&amp;quot; %}}Get Grav with icon right{{% /button %}}
+{{% button href=&amp;quot;https://getgrav.org/&amp;quot; icon=&amp;quot;fa fa-share&amp;quot; icon-position=&amp;quot;right&amp;quot; %}}Get Grav with icon right{{% /button %}}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a  href=&#34;https://getgrav.org/&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
@@ -1211,9 +1274,9 @@ An warning disclaimer
 
 &lt;p&gt;Using the command: &lt;code&gt;hugo new [relative new content path]&lt;/code&gt;, you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more : &lt;a href=&#34;https://gohugo.io/content/archetypes/&#34;&gt;archetypes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;It is pre-configured skeleton pages with default front matter. Please refer to the &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/pages/#types:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;documentation&lt;/a&gt; for types of page to understand the differences.&lt;/p&gt;
+&lt;p&gt;It is pre-configured skeleton pages with default front matter. Please refer to the &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/pages/#types&#34;&gt;documentation&lt;/a&gt; for types of page to understand the differences.&lt;/p&gt;
 
-&lt;h2 id=&#34;chapter:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter&lt;/h2&gt;
+&lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
 
 &lt;p&gt;To create a Chapter page, run either one of the following commands&lt;/p&gt;
 
@@ -1242,7 +1305,7 @@ weight: 0
 Lorem ipsum
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;default:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Default&lt;/h2&gt;
+&lt;h2 id=&#34;default&#34;&gt;Default&lt;/h2&gt;
 
 &lt;p&gt;To create a default page, run either one of the following commands&lt;/p&gt;
 
