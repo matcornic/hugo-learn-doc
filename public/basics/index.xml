@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Basics on Hugo Learn Theme</title>
-    <link>https://matcornic.github.io/hugo-learn-doc/basics/</link>
-    <description>Recent content in Basics on Hugo Learn Theme</description>
+    <title>Basics-rsses on Hugo Learn Theme</title>
+    <link>https://matcornic.github.io/hugo-learn-doc/basics/index.xml</link>
+    <description>Recent content in Basics-rsses on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://matcornic.github.io/hugo-learn-doc/basics/index.xml" rel="self" type="application/rss+xml" />
@@ -16,9 +16,9 @@
       <guid>https://matcornic.github.io/hugo-learn-doc/basics/</guid>
       <description>
 
-&lt;h3 id=&#34;chapter-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 
-&lt;h1 id=&#34;basics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basics&lt;/h1&gt;
+&lt;h1 id=&#34;basics&#34;&gt;Basics&lt;/h1&gt;
 
 &lt;p&gt;Discover what this Hugo theme is all about and the core-concepts behind it.&lt;/p&gt;
 </description>
@@ -64,34 +64,34 @@
 
 &lt;p&gt;The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you to train by following this &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;great documentation for beginners&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;create-your-project:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your project&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-project&#34;&gt;Create your project&lt;/h2&gt;
 
 &lt;p&gt;Hugo provides a &lt;code&gt;new&lt;/code&gt; command to create a new website.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo new site &amp;lt;new_project&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;install-the-theme:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Install the theme&lt;/h2&gt;
+&lt;h2 id=&#34;install-the-theme&#34;&gt;Install the theme&lt;/h2&gt;
 
 &lt;p&gt;Install the &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; theme by following &lt;a href=&#34;https://gohugo.io/themes/installing/&#34;&gt;this documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme&amp;rsquo;s repository is: &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn.git&#34;&gt;https://github.com/matcornic/hugo-theme-learn.git&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;basic-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basic configuration&lt;/h2&gt;
+&lt;h2 id=&#34;basic-configuration&#34;&gt;Basic configuration&lt;/h2&gt;
 
 &lt;p&gt;When building the website, you can set a theme by using &lt;code&gt;--theme&lt;/code&gt; option. We suggest you to edit your configuration file and set the theme by default. Example with &lt;code&gt;config.toml&lt;/code&gt; format.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;theme = &amp;quot;hugo-theme-learn&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;create-your-first-chapter-page:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first chapter page&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-first-chapter-page&#34;&gt;Create your first chapter page&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo new --kind chapter basics/index.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;create-your-first-content-pages:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Create your first content pages&lt;/h2&gt;
+&lt;h2 id=&#34;create-your-first-content-pages&#34;&gt;Create your first content pages&lt;/h2&gt;
 
 &lt;p&gt;Then, create content pages inside the previous chapter. Here are two ways to create content in the chapter :&lt;/p&gt;
 
@@ -99,7 +99,33 @@
 hugo new basics/second-content/index.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;launching-the-website:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Launching the website&lt;/h2&gt;
+&lt;h2 id=&#34;enable-search-functionality&#34;&gt;Enable search functionality&lt;/h2&gt;
+
+&lt;p&gt;To use the &lt;code&gt;search&lt;/code&gt; functionality, you just have to put a &lt;code&gt;lunr&lt;/code&gt; index which respects this format :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
+    {
+        &amp;quot;uri&amp;quot;: &amp;quot;/docs/01-start/index&amp;quot;,
+        &amp;quot;title&amp;quot;: &amp;quot;Get started&amp;quot;,
+        &amp;quot;content&amp;quot;: &amp;quot;\n\nGet started\n\nAll you need to know...\n&amp;quot;,
+        &amp;quot;tags&amp;quot;: [&amp;quot;start&amp;quot;, &amp;quot;intro&amp;quot;]
+    },
+    ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;into a &lt;code&gt;static/json/search.json&lt;/code&gt; file in your hugo project.&lt;/p&gt;
+
+&lt;p&gt;And set &lt;code&gt;search = true&lt;/code&gt; in your config.toml&lt;/p&gt;
+
+&lt;p&gt;To generate your lunr index, you can see this project &lt;a href=&#34;https://github.com/gwleclerc/lunr-hugo&#34;&gt;https://github.com/gwleclerc/lunr-hugo&lt;/a&gt; which parse your markdown files and extract toml and yaml headers to create index with corresponding format.&lt;/p&gt;
+
+&lt;p&gt;In order to generate the index of your static site launch the following comand after installing &lt;code&gt;lunr-hugo&lt;/code&gt; using &lt;code&gt;npm&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    lunr-hugo -i &amp;quot;&amp;lt;content directory&amp;gt;/**/*.md&amp;quot; -o static/json/search.json -l &amp;lt;header format (yaml or toml)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;launching-the-website&#34;&gt;Launching the website&lt;/h2&gt;
 
 &lt;p&gt;Launch the following command&lt;/p&gt;
 
@@ -135,7 +161,7 @@ hugo new basics/second-content/index.md
       <guid>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</guid>
       <description>
 
-&lt;h2 id=&#34;site-configuration:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Site configuration&lt;/h2&gt;
+&lt;h2 id=&#34;site-configuration&#34;&gt;Site configuration&lt;/h2&gt;
 
 &lt;p&gt;On top of &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Hugo global configuration&lt;/a&gt;, &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; lets you define the following parameters :&lt;/p&gt;
 
@@ -155,7 +181,7 @@ hugo new basics/second-content/index.md
 &lt;/div&gt;
 
 
-&lt;h2 id=&#34;style-customization:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Style customization&lt;/h2&gt;
+&lt;h2 id=&#34;style-customization&#34;&gt;Style customization&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; has been built to be as configurable as possible by defining multiple &lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;partials&lt;/a&gt;&lt;/p&gt;
 
@@ -174,7 +200,7 @@ hugo new basics/second-content/index.md
 &lt;li&gt;&lt;em&gt;toc&lt;/em&gt;: table of contents&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;change-the-logo:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the logo&lt;/h3&gt;
+&lt;h3 id=&#34;change-the-logo&#34;&gt;Change the logo&lt;/h3&gt;
 
 &lt;p&gt;Create a new file in &lt;code&gt;layouts/partials/&lt;/code&gt; named &lt;code&gt;logo.html&lt;/code&gt;. Then write any HTML you want.
 You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image created under the &lt;em&gt;static&lt;/em&gt; folder, or you could paste a SVG definition !&lt;/p&gt;
@@ -183,7 +209,7 @@ You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image cr
 &lt;/div&gt;
 
 
-&lt;h3 id=&#34;change-the-favicon:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change the favicon&lt;/h3&gt;
+&lt;h3 id=&#34;change-the-favicon&#34;&gt;Change the favicon&lt;/h3&gt;
 
 &lt;p&gt;If your favicon is a png, just drop off your image in your local &lt;code&gt;static/images/&lt;/code&gt; folder and names it &lt;code&gt;favicon.png&lt;/code&gt;&lt;/p&gt;
 
@@ -192,7 +218,7 @@ You could use an &lt;code&gt;img&lt;/code&gt; HTML tag and reference an image cr
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;/images/favicon.png&amp;quot; type=&amp;quot;image/x-icon&amp;quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;change-default-colors:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Change default colors&lt;/h3&gt;
+&lt;h3 id=&#34;change-default-colors&#34;&gt;Change default colors&lt;/h3&gt;
 
 &lt;p&gt;To change default colors, you will have to add a new css file. In order to do that :&lt;/p&gt;
 

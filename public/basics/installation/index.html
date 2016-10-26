@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.15" />
+    <meta name="generator" content="Hugo 0.17" />
     <meta name="description" content="Documentation for Hugo Learn Theme">
 <meta name="author" content="Mathieu Cornic">
 
@@ -16,8 +16,10 @@
     <link href="https://matcornic.github.io/hugo-learn-doc/css/hybrid.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/featherlight.min.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://matcornic.github.io/hugo-learn-doc/css/horsey.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/theme.css" rel="stylesheet">
     <link href="https://matcornic.github.io/hugo-learn-doc/css/hugo-theme.css" rel="stylesheet">
+    <script src="https://matcornic.github.io/hugo-learn-doc/js/jquery-2.x.min.js"></script>
     <style type="text/css">:root #header + #content > #left > #rlblock_left
     {display:none !important;}</style>
     
@@ -67,14 +69,36 @@
 
 </a>
 
-      
     </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input id="search-by" type="text" placeholder="Search">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/lunr.min.js"></script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/matcornic.github.io\/hugo-learn-doc";
+</script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/search.js"></script>
+
+    
 </div>
 
 
   <div class="highlightable">
     <ul class="topics">
       
+      
+        
+      
+      
+      
+      
+
+      
+        
       
       
       
@@ -132,6 +156,11 @@
       
       
       
+
+      
+        
+      
+      
       
 
       <li class="dd-item  " data-nav-id="/cont/">
@@ -187,6 +216,11 @@
       
       
       
+
+      
+        
+      
+      
       
 
       <li class="dd-item  " data-nav-id="/contributing/">
@@ -205,7 +239,7 @@
       
     </ul>
     <hr>
-      
+     
     <section id="footer">
       <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
     </section>
@@ -262,12 +296,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create-your-project:d680e8a854a7cbad6d490c445cba2eba">Create your project</a></li>
-<li><a href="#install-the-theme:d680e8a854a7cbad6d490c445cba2eba">Install the theme</a></li>
-<li><a href="#basic-configuration:d680e8a854a7cbad6d490c445cba2eba">Basic configuration</a></li>
-<li><a href="#create-your-first-chapter-page:d680e8a854a7cbad6d490c445cba2eba">Create your first chapter page</a></li>
-<li><a href="#create-your-first-content-pages:d680e8a854a7cbad6d490c445cba2eba">Create your first content pages</a></li>
-<li><a href="#launching-the-website:d680e8a854a7cbad6d490c445cba2eba">Launching the website</a></li>
+<li><a href="#create-your-project">Create your project</a></li>
+<li><a href="#install-the-theme">Install the theme</a></li>
+<li><a href="#basic-configuration">Basic configuration</a></li>
+<li><a href="#create-your-first-chapter-page">Create your first chapter page</a></li>
+<li><a href="#create-your-first-content-pages">Create your first content pages</a></li>
+<li><a href="#enable-search-functionality">Enable search functionality</a></li>
+<li><a href="#launching-the-website">Launching the website</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -287,34 +322,34 @@
 
 <p>The following steps are here to help you initialize your new website. If you don&rsquo;t know Hugo at all, we strongly suggest you to train by following this <a href="https://gohugo.io/overview/quickstart/">great documentation for beginners</a>.</p>
 
-<h2 id="create-your-project:d680e8a854a7cbad6d490c445cba2eba">Create your project</h2>
+<h2 id="create-your-project">Create your project</h2>
 
 <p>Hugo provides a <code>new</code> command to create a new website.</p>
 
 <pre><code>hugo new site &lt;new_project&gt;
 </code></pre>
 
-<h2 id="install-the-theme:d680e8a854a7cbad6d490c445cba2eba">Install the theme</h2>
+<h2 id="install-the-theme">Install the theme</h2>
 
 <p>Install the <strong>Hugo-theme-learn</strong> theme by following <a href="https://gohugo.io/themes/installing/">this documentation</a></p>
 
 <p>The theme&rsquo;s repository is: <a href="https://github.com/matcornic/hugo-theme-learn.git">https://github.com/matcornic/hugo-theme-learn.git</a></p>
 
-<h2 id="basic-configuration:d680e8a854a7cbad6d490c445cba2eba">Basic configuration</h2>
+<h2 id="basic-configuration">Basic configuration</h2>
 
 <p>When building the website, you can set a theme by using <code>--theme</code> option. We suggest you to edit your configuration file and set the theme by default. Example with <code>config.toml</code> format.</p>
 
 <pre><code class="language-toml">theme = &quot;hugo-theme-learn&quot;
 </code></pre>
 
-<h2 id="create-your-first-chapter-page:d680e8a854a7cbad6d490c445cba2eba">Create your first chapter page</h2>
+<h2 id="create-your-first-chapter-page">Create your first chapter page</h2>
 
 <p><strong>Hugo-theme-learn</strong> provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command</p>
 
 <pre><code>hugo new --kind chapter basics/index.md
 </code></pre>
 
-<h2 id="create-your-first-content-pages:d680e8a854a7cbad6d490c445cba2eba">Create your first content pages</h2>
+<h2 id="create-your-first-content-pages">Create your first content pages</h2>
 
 <p>Then, create content pages inside the previous chapter. Here are two ways to create content in the chapter :</p>
 
@@ -322,7 +357,33 @@
 hugo new basics/second-content/index.md
 </code></pre>
 
-<h2 id="launching-the-website:d680e8a854a7cbad6d490c445cba2eba">Launching the website</h2>
+<h2 id="enable-search-functionality">Enable search functionality</h2>
+
+<p>To use the <code>search</code> functionality, you just have to put a <code>lunr</code> index which respects this format :</p>
+
+<pre><code class="language-json">[
+    {
+        &quot;uri&quot;: &quot;/docs/01-start/index&quot;,
+        &quot;title&quot;: &quot;Get started&quot;,
+        &quot;content&quot;: &quot;\n\nGet started\n\nAll you need to know...\n&quot;,
+        &quot;tags&quot;: [&quot;start&quot;, &quot;intro&quot;]
+    },
+    ...
+]
+</code></pre>
+
+<p>into a <code>static/json/search.json</code> file in your hugo project.</p>
+
+<p>And set <code>search = true</code> in your config.toml</p>
+
+<p>To generate your lunr index, you can see this project <a href="https://github.com/gwleclerc/lunr-hugo">https://github.com/gwleclerc/lunr-hugo</a> which parse your markdown files and extract toml and yaml headers to create index with corresponding format.</p>
+
+<p>In order to generate the index of your static site launch the following comand after installing <code>lunr-hugo</code> using <code>npm</code></p>
+
+<pre><code>    lunr-hugo -i &quot;&lt;content directory&gt;/**/*.md&quot; -o static/json/search.json -l &lt;header format (yaml or toml)&gt;
+</code></pre>
+
+<h2 id="launching-the-website">Launching the website</h2>
 
 <p>Launch the following command</p>
 
@@ -362,7 +423,6 @@ hugo new basics/second-content/index.md
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://matcornic.github.io/hugo-learn-doc/js/jquery-2.x.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/clipboard.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/perfect-scrollbar.min.js"></script>
     <script src="https://matcornic.github.io/hugo-learn-doc/js/perfect-scrollbar.jquery.min.js"></script>
