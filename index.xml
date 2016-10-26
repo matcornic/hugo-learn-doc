@@ -990,7 +990,11 @@ hugo new basics/second-content/index.md
 
 &lt;h2 id=&#34;enable-search-functionality&#34;&gt;Enable search functionality&lt;/h2&gt;
 
-&lt;p&gt;To use the &lt;code&gt;search&lt;/code&gt; functionality, you just have to put a &lt;code&gt;lunr&lt;/code&gt; index which respects this format :&lt;/p&gt;
+&lt;p&gt;As the index generation is not yet supported by Hugo (&lt;a href=&#34;https://github.com/spf13/hugo/pull/1853&#34;&gt;PR #1853&lt;/a&gt;),
+we decided to use &lt;code&gt;lunr&lt;/code&gt; index.
+As soon as the generation of the index will be supported by hugo, we will use the official format.&lt;/p&gt;
+
+&lt;p&gt;So to use the &lt;code&gt;search&lt;/code&gt; functionality, you just have to put a &lt;code&gt;lunr&lt;/code&gt; index which respects this format :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
     {
