@@ -48,7 +48,12 @@ hugo new basics/second-content/index.md
 ```
 
 ## Enable search functionality
-To use the `search` functionality, you just have to put a `lunr` index which respects this format :
+
+As the index generation is not yet supported by Hugo ([PR #1853](https://github.com/spf13/hugo/pull/1853)),
+we decided to use `lunr` index.
+As soon as the generation of the index will be supported by hugo, we will use the official format.
+
+So to use the `search` functionality, you just have to put a `lunr` index which respects this format :
 ```json
 [
     {
