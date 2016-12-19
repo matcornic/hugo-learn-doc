@@ -1,4 +1,4 @@
-baseurl = "https://matcornic.github.io/hugo-learn-doc/"
+baseurl = "https://matcornic.github.io/hugo-learn-doc"
 languageCode = "en-us"
 title = "Hugo Learn Theme"
 theme = "hugo-theme-learn"
