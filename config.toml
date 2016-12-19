@@ -1,4 +1,4 @@
-baseurl = "https://matcornic.github.io/hugo-learn-doc"
+baseurl = "https://matcornic.github.io/hugo-learn-doc/"
 languageCode = "en-us"
 title = "Hugo Learn Theme"
 theme = "hugo-theme-learn"
@@ -8,4 +8,3 @@ MetaDataFormat = "yaml"
   editURL = "https://github.com/matcornic/hugo-learn-doc/edit/master/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
-  search = true
