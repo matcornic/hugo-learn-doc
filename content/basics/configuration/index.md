@@ -25,7 +25,7 @@ On top of [Hugo global configuration](https://gohugo.io/overview/configuration/)
 ```
 
 {{% notice tip %}}
-Assets are based on the root of the site. So, don't forget to use Hugo built-in `canonifyURLs = true` parameter if you set a `baseurl` which includes a component path. Absolutely needed for Github pages like http://userid.github.io/project. Find [More information](https://github.com/matcornic/hugo-theme-learn/issues/3)
+Assets are based on the `baseurl` of the site. So, don't forget to configure yours in the `config.toml` file. Absolutely needed for Github pages like http://userid.github.io/project.
 {{% /notice %}}
 
 ## Style customization
