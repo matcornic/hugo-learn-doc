@@ -8,3 +8,5 @@ MetaDataFormat = "yaml"
   editURL = "https://github.com/matcornic/hugo-learn-doc/edit/master/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
+  autoNav = true
+  search = true

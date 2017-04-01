@@ -1,7 +1,5 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-prev: /cont
-next: /cont/markdown
 title: Pages
 toc: true
 weight: 5
@@ -40,7 +38,6 @@ You can define any HTML as prefix for the menu. In the example below, it's just 
 
     ---
     title: Basics
-    next: /basics/what-is-this-hugo-theme
     chapter: true
     weight: 0
     icon: "<b>1. </b>"
@@ -55,12 +52,10 @@ You can define any HTML as prefix for the menu. In the example below, it's just 
 
 A *Default* page is any other content page.
 
-![Chapter page](images/pages-default.png?width=50%)
+![Default page](images/pages-default.png?width=50%)
 
     ---
     title: What is this Hugo theme ?
-    prev: /basics
-    next: /basics/requirements
     weight: 5
     ---
 
@@ -72,7 +67,7 @@ A *Default* page is any other content page.
 
     ![Grav Overview](images/grav-overview.png?width=60%)
 
-To tell **Hugo-theme-learn** to consider a page as a chapter, just set `chapter: true` in the [front-matter headers]({{< relref "#front-matter" >}}).
+To tell **Hugo-theme-learn** to consider a page as a chapter, just the name of your file as `_index.md`.
 
 **Hugo-theme-learn** provides [archetypes](/cont/archetypes) to help you create this kind of pages.
 
@@ -86,12 +81,10 @@ Each Hugo page has to define a [Front Matter](https://gohugo.io/content/front-ma
 +++
 # Set to true, it automatically generates a table of contents, available in the top of the screen.
 toc = "false"
-# Path to previous page. If set, add a previous arrow button on page
+# Override path to previous page. This theme automatically generates previous arrows 
 prev = ""
-# Path to next page. If set, add a next arrow on page
+# Override path to next page. This theme automatically generates next arrows 
 next = ""
-# Set a page as chapter, in another words, a page that contains other pages. Changes the display and behavior of the page
-chapter = "false"
 # Set HTML in this parameter. The chapter title in the menu will be prefixed by this. Useful for icons.
 icon: ""
 +++
@@ -103,37 +96,12 @@ Hugo provides a [flexible way](https://gohugo.io/content/ordering/) to handle or
 
 The simplest way is to use `weight` parameter in the front matter of your page.
 
-### Menu ordering
 
-If you don't like generated menu ordering, which is done alphabetically by default, you
-can explicitly define sections ordering in `config.toml`.
+{{% notice tip %}}
+Be aware that weight are applied separately for each kind of page (Chapter and Default). It means that if you mix chapter pages and default pages at the same level, the order won't be displayed as expected. 
 
-For site with following `tree content`:
-```
-content/
-├── about
-│   ├── content.md
-│   ├── index.md
-├── bar
-│   ├── index.md
-│   └── mode_bar.md
-├── foo
-│   ├── foo2.md
-│   └── index.md
-└── introduction
-    ├── index.md
-    └── blabla.md
-```
+{{% /notice %}}
 
-You can set menu ordering as:
+The workaround is to override page type by adding `chapter: false` in the front matter of your Chapter page (identified as `_index.md` file).
 
-1. about
-2. introduction
-3. foo
-4. bar
-
-all you need is to add menu definition in `config.toml`:
-```
-[params]
-  menu = [ "about", "introduction", "foo", "bar" ]
-```
+For example, with 5 chapters page and 1 default page at the same level, rename the default page as `_index.md` and add `chapter: false` in the front-matter. It will then be considered as chapter for weight order computing, but content will be displayed as a default page.

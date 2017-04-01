@@ -6,67 +6,8 @@
     <description>Recent content on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     <atom:link href="https://matcornic.github.io/hugo-learn-doc/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Basics</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/</guid>
-      <description>
-
-&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
-
-&lt;h1 id=&#34;basics&#34;&gt;Basics&lt;/h1&gt;
-
-&lt;p&gt;Discover what this Hugo theme is all about and the core-concepts behind it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Content</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/cont/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/cont/</guid>
-      <description>
-
-&lt;h3 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h3&gt;
-
-&lt;h1 id=&#34;content&#34;&gt;Content&lt;/h1&gt;
-
-&lt;p&gt;Find out how to create and organize your content quickly and intuitively.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contributing</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/contributing/</link>
-      <pubDate>Sat, 09 Apr 2016 16:58:30 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;To help the world to be a better place, you could :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Contribute to this doc by using &lt;em&gt;Edit this page&lt;/em&gt; link.&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, the static website generator which this theme is for&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://getgrav.org/&#34;&gt;Grav&lt;/a&gt;, the flat file CMS of which this theme is from (Thanks to MIT license)&lt;/li&gt;
-&lt;li&gt;Contribute to the &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;Hugo-theme-learn&lt;/a&gt; theme itself&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Handling more than 2 levels in documentation.&lt;/li&gt;
-&lt;li&gt;Search in site&lt;/li&gt;
-&lt;li&gt;Handling videos&lt;/li&gt;
-&lt;li&gt;Add optional button to create doc issue (like github)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Pages</title>
@@ -110,7 +51,6 @@ You can define any HTML as prefix for the menu. In the example below, it&amp;rsq
 
 &lt;pre&gt;&lt;code&gt;---
 title: Basics
-next: /basics/what-is-this-hugo-theme
 chapter: true
 weight: 0
 icon: &amp;quot;&amp;lt;b&amp;gt;1. &amp;lt;/b&amp;gt;&amp;quot;
@@ -125,12 +65,10 @@ Discover what this Hugo theme is all about and the core-concepts behind it.
 
 &lt;p&gt;A &lt;em&gt;Default&lt;/em&gt; page is any other content page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;images/pages-default.png?width=50%&#34; alt=&#34;Chapter page&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/pages-default.png?width=50%&#34; alt=&#34;Default page&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 title: What is this Hugo theme ?
-prev: /basics
-next: /basics/requirements
 weight: 5
 ---
 
@@ -143,7 +81,7 @@ This current documentation has been statically generated with Hugo with a simple
 ![Grav Overview](images/grav-overview.png?width=60%)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To tell &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; to consider a page as a chapter, just set &lt;code&gt;chapter: true&lt;/code&gt; in the &lt;a href=&#34;#front-matter&#34;&gt;front-matter headers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To tell &lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; to consider a page as a chapter, just the name of your file as &lt;code&gt;_index.md&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides &lt;a href=&#34;https://matcornic.github.io/hugo-learn-doc/cont/archetypes&#34;&gt;archetypes&lt;/a&gt; to help you create this kind of pages.&lt;/p&gt;
 
@@ -156,12 +94,10 @@ This current documentation has been statically generated with Hugo with a simple
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
 # Set to true, it automatically generates a table of contents, available in the top of the screen.
 toc = &amp;quot;false&amp;quot;
-# Path to previous page. If set, add a previous arrow button on page
+# Override path to previous page. This theme automatically generates previous arrows 
 prev = &amp;quot;&amp;quot;
-# Path to next page. If set, add a next arrow on page
+# Override path to next page. This theme automatically generates next arrows 
 next = &amp;quot;&amp;quot;
-# Set a page as chapter, in another words, a page that contains other pages. Changes the display and behavior of the page
-chapter = &amp;quot;false&amp;quot;
 # Set HTML in this parameter. The chapter title in the menu will be prefixed by this. Useful for icons.
 icon: &amp;quot;&amp;quot;
 +++
@@ -173,42 +109,13 @@ icon: &amp;quot;&amp;quot;
 
 &lt;p&gt;The simplest way is to use &lt;code&gt;weight&lt;/code&gt; parameter in the front matter of your page.&lt;/p&gt;
 
-&lt;h3 id=&#34;menu-ordering&#34;&gt;Menu ordering&lt;/h3&gt;
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Be aware that weight are applied separately for each kind of page (Chapter and Default). It means that if you mix chapter pages and default pages at the same level, the order won&amp;rsquo;t be displayed as expected.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;If you don&amp;rsquo;t like generated menu ordering, which is done alphabetically by default, you
-can explicitly define sections ordering in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;For site with following &lt;code&gt;tree content&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;The workaround is to override page type by adding &lt;code&gt;chapter: false&lt;/code&gt; in the front matter of your Chapter page (identified as &lt;code&gt;_index.md&lt;/code&gt; file).&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;content/
-├── about
-│   ├── content.md
-│   ├── index.md
-├── bar
-│   ├── index.md
-│   └── mode_bar.md
-├── foo
-│   ├── foo2.md
-│   └── index.md
-└── introduction
-    ├── index.md
-    └── blabla.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can set menu ordering as:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;about&lt;/li&gt;
-&lt;li&gt;introduction&lt;/li&gt;
-&lt;li&gt;foo&lt;/li&gt;
-&lt;li&gt;bar&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;all you need is to add menu definition in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[params]
-  menu = [ &amp;quot;about&amp;quot;, &amp;quot;introduction&amp;quot;, &amp;quot;foo&amp;quot;, &amp;quot;bar&amp;quot; ]
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, with 5 chapters page and 1 default page at the same level, rename the default page as &lt;code&gt;_index.md&lt;/code&gt; and add &lt;code&gt;chapter: false&lt;/code&gt; in the front-matter. It will then be considered as chapter for weight order computing, but content will be displayed as a default page.&lt;/p&gt;
 </description>
     </item>
     
@@ -977,7 +884,8 @@ Content for chapter one.
 
 &lt;p&gt;&lt;strong&gt;Hugo-theme-learn&lt;/strong&gt; provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;hugo new --kind chapter basics/index.md
+&lt;pre&gt;&lt;code&gt;# _index.md files are considered as chapters
+hugo new --kind chapter basics/_index.md
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;create-your-first-content-pages&#34;&gt;Create your first content pages&lt;/h2&gt;
@@ -1271,7 +1179,7 @@ An warning disclaimer
     <item>
       <title>Archetypes</title>
       <link>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</link>
-      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</guid>
       <description>
@@ -1282,22 +1190,16 @@ An warning disclaimer
 
 &lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
 
-&lt;p&gt;To create a Chapter page, run either one of the following commands&lt;/p&gt;
+&lt;p&gt;To create a Chapter page, run the following commands&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;# Either
-hugo new --kind chapter &amp;lt;name&amp;gt;/index.md
-# Or
-hugo new --kind chapter &amp;lt;name&amp;gt;.md
+&lt;pre&gt;&lt;code&gt;hugo new --kind chapter &amp;lt;name&amp;gt;/_index.md
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It will create a page with predefined Front-Matter:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;---
-chapter: true
 date: 2016-04-10T23:17:49+02:00
 icon: &amp;lt;b&amp;gt;X. &amp;lt;/b&amp;gt;
-next: /next/path
-prev: /prev/path
 title: index
 weight: 0
 ---
@@ -1323,8 +1225,6 @@ hugo new &amp;lt;chapter&amp;gt;/&amp;lt;name&amp;gt;.md
 
 &lt;pre&gt;&lt;code&gt;---
 date: 2016-04-09T17:51:50+02:00
-next: /next/path
-prev: /prev/path
 title: index
 toc: true
 weight: 5

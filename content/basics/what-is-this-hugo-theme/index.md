@@ -1,7 +1,5 @@
 ---
 title: What is this Hugo theme ?
-prev: /basics
-next: /basics/requirements
 weight: 5
 ---
 

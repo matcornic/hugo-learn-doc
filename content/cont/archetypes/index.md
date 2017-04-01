@@ -1,7 +1,4 @@
 ---
-date: 2016-04-09T16:50:16+02:00
-prev: /cont/shortcodes
-next: /contributing
 title: Archetypes
 toc: true
 weight: 25
@@ -14,23 +11,17 @@ It is pre-configured skeleton pages with default front matter. Please refer to t
 
 ## Chapter
 
-To create a Chapter page, run either one of the following commands
+To create a Chapter page, run the following commands
 
 ```
-# Either
-hugo new --kind chapter <name>/index.md
-# Or
-hugo new --kind chapter <name>.md
+hugo new --kind chapter <name>/_index.md
 ```
 
 It will create a page with predefined Front-Matter:
 
     ---
-    chapter: true
     date: 2016-04-10T23:17:49+02:00
     icon: <b>X. </b>
-    next: /next/path
-    prev: /prev/path
     title: index
     weight: 0
     ---
@@ -57,8 +48,6 @@ It will create a page with predefined Front-Matter:
 
     ---
     date: 2016-04-09T17:51:50+02:00
-    next: /next/path
-    prev: /prev/path
     title: index
     toc: true
     weight: 5

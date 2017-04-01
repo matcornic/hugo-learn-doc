@@ -1,7 +1,5 @@
 ---
 title: Basics
-next: /basics/what-is-this-hugo-theme
-chapter: true
 weight: 0
 icon: "<b>1. </b>"
 ---

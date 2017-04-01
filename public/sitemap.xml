@@ -2,29 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/</loc>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/</loc>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/contributing/</loc>
-    <lastmod>2016-04-09T16:58:30+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://matcornic.github.io/hugo-learn-doc/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/cont/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/contributing/</loc>
+    <lastmod>2016-04-09T16:58:30+02:00</lastmod>
   </url>
   
   <url>
@@ -52,7 +45,27 @@
   
   <url>
     <loc>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/basics/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://matcornic.github.io/hugo-learn-doc/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

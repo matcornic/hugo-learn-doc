@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.18-DEV" />
+    <meta name="generator" content="Hugo 0.20-DEV" />
     <meta name="description" content="Documentation for Hugo Learn Theme">
 <meta name="author" content="Mathieu Cornic">
 
@@ -26,6 +26,7 @@
 
   </head>
   <body class="" data-url="/hugo-learn-doc/cont/pages/">
+    
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -71,13 +72,49 @@
 
     </div>
     
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input id="search-by" type="text" placeholder="Search">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/lunr.min.js"></script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/matcornic.github.io\/hugo-learn-doc";
+</script>
+<script type="text/javascript" src="https://matcornic.github.io/hugo-learn-doc/js/search.js"></script>
+
+    
 </div>
 
 
   <div class="highlightable">
     <ul class="topics">
       
-      
+        
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+          
+          
+            
+          
+        
+        
+        
+          
+        
+          
+        
+          
         
       
       
@@ -85,6 +122,10 @@
       
 
       
+      
+      
+        
+          
         
       
       
@@ -103,16 +144,11 @@
         
         <ul>
           
-          
-          
-          
             <li class="dd-item " data-nav-id="/hugo-learn-doc/basics/what-is-this-hugo-theme/">
               <a href="/hugo-learn-doc/basics/what-is-this-hugo-theme/">
                 <span>What is this Hugo theme ?     </i></span>
               </a>
             </li>
-          
-          
           
             <li class="dd-item " data-nav-id="/hugo-learn-doc/basics/requirements/">
               <a href="/hugo-learn-doc/basics/requirements/">
@@ -120,22 +156,17 @@
               </a>
             </li>
           
-          
-          
             <li class="dd-item " data-nav-id="/hugo-learn-doc/basics/installation/">
               <a href="/hugo-learn-doc/basics/installation/">
                 <span>Getting started     </i></span>
               </a>
             </li>
           
-          
-          
             <li class="dd-item " data-nav-id="/hugo-learn-doc/basics/configuration/">
               <a href="/hugo-learn-doc/basics/configuration/">
                 <span>Configuration     </i></span>
               </a>
             </li>
-          
           
         </ul>
         
@@ -145,6 +176,10 @@
       
 
       
+      
+      
+        
+          
         
       
       
@@ -163,16 +198,11 @@
         
         <ul>
           
-          
-          
-          
             <li class="dd-item active" data-nav-id="/hugo-learn-doc/cont/pages/">
               <a href="/hugo-learn-doc/cont/pages/">
                 <span>Pages     </i></span>
               </a>
             </li>
-          
-          
           
             <li class="dd-item " data-nav-id="/hugo-learn-doc/cont/markdown/">
               <a href="/hugo-learn-doc/cont/markdown/">
@@ -180,22 +210,17 @@
               </a>
             </li>
           
-          
-          
             <li class="dd-item " data-nav-id="/hugo-learn-doc/cont/shortcodes/">
               <a href="/hugo-learn-doc/cont/shortcodes/">
                 <span>Shortcodes     </i></span>
               </a>
             </li>
           
-          
-          
             <li class="dd-item " data-nav-id="/hugo-learn-doc/cont/archetypes/">
               <a href="/hugo-learn-doc/cont/archetypes/">
                 <span>Archetypes     </i></span>
               </a>
             </li>
-          
           
         </ul>
         
@@ -205,6 +230,10 @@
       
 
       
+      
+      
+        
+          
         
       
       
@@ -229,6 +258,7 @@
      
     <section id="footer">
       <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
     </section>
   </div>
 </nav>
@@ -261,17 +291,13 @@
                 <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
                 
                 
-                
-                
                   
-                
+                  
                   
                     
                     
                 <a href="/hugo-learn-doc/cont/" itemprop="url"><span itemprop="title">Content</span></a> <i class="fa fa-angle-right"></i>
                     
-                  
-                
                   
                 
                 <span itemprop="title"> Pages</span>
@@ -286,10 +312,7 @@
 <li><a href="#folders">Folders</a></li>
 <li><a href="#types">Types</a></li>
 <li><a href="#front-matter">Front Matter</a></li>
-<li><a href="#ordering">Ordering</a>
-<ul>
-<li><a href="#menu-ordering">Menu ordering</a></li>
-</ul></li>
+<li><a href="#ordering">Ordering</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -300,7 +323,7 @@
 
             </div>
             
-    	        <div id="body-inner">
+              <div id="body-inner">
                 
                 <h1>Pages</h1>
                 
@@ -341,7 +364,6 @@ You can define any HTML as prefix for the menu. In the example below, it&rsquo;s
 
 <pre><code>---
 title: Basics
-next: /basics/what-is-this-hugo-theme
 chapter: true
 weight: 0
 icon: &quot;&lt;b&gt;1. &lt;/b&gt;&quot;
@@ -356,12 +378,10 @@ Discover what this Hugo theme is all about and the core-concepts behind it.
 
 <p>A <em>Default</em> page is any other content page.</p>
 
-<p><img src="images/pages-default.png?width=50%" alt="Chapter page" /></p>
+<p><img src="images/pages-default.png?width=50%" alt="Default page" /></p>
 
 <pre><code>---
 title: What is this Hugo theme ?
-prev: /basics
-next: /basics/requirements
 weight: 5
 ---
 
@@ -374,7 +394,7 @@ This current documentation has been statically generated with Hugo with a simple
 ![Grav Overview](images/grav-overview.png?width=60%)
 </code></pre>
 
-<p>To tell <strong>Hugo-theme-learn</strong> to consider a page as a chapter, just set <code>chapter: true</code> in the <a href="#front-matter">front-matter headers</a>.</p>
+<p>To tell <strong>Hugo-theme-learn</strong> to consider a page as a chapter, just the name of your file as <code>_index.md</code>.</p>
 
 <p><strong>Hugo-theme-learn</strong> provides <a href="/cont/archetypes">archetypes</a> to help you create this kind of pages.</p>
 
@@ -387,12 +407,10 @@ This current documentation has been statically generated with Hugo with a simple
 <pre><code class="language-toml">+++
 # Set to true, it automatically generates a table of contents, available in the top of the screen.
 toc = &quot;false&quot;
-# Path to previous page. If set, add a previous arrow button on page
+# Override path to previous page. This theme automatically generates previous arrows 
 prev = &quot;&quot;
-# Path to next page. If set, add a next arrow on page
+# Override path to next page. This theme automatically generates next arrows 
 next = &quot;&quot;
-# Set a page as chapter, in another words, a page that contains other pages. Changes the display and behavior of the page
-chapter = &quot;false&quot;
 # Set HTML in this parameter. The chapter title in the menu will be prefixed by this. Useful for icons.
 icon: &quot;&quot;
 +++
@@ -404,52 +422,107 @@ icon: &quot;&quot;
 
 <p>The simplest way is to use <code>weight</code> parameter in the front matter of your page.</p>
 
-<h3 id="menu-ordering">Menu ordering</h3>
-
-<p>If you don&rsquo;t like generated menu ordering, which is done alphabetically by default, you
-can explicitly define sections ordering in <code>config.toml</code>.</p>
-
-<p>For site with following <code>tree content</code>:</p>
-
-<pre><code>content/
-├── about
-│   ├── content.md
-│   ├── index.md
-├── bar
-│   ├── index.md
-│   └── mode_bar.md
-├── foo
-│   ├── foo2.md
-│   └── index.md
-└── introduction
-    ├── index.md
-    └── blabla.md
-</code></pre>
-
-<p>You can set menu ordering as:</p>
-
-<ol>
-<li>about</li>
-<li>introduction</li>
-<li>foo</li>
-<li>bar</li>
-</ol>
-
-<p>all you need is to add menu definition in <code>config.toml</code>:</p>
-
-<pre><code>[params]
-  menu = [ &quot;about&quot;, &quot;introduction&quot;, &quot;foo&quot;, &quot;bar&quot; ]
-</code></pre>
+<div class="notices tip" ><p>Be aware that weight are applied separately for each kind of page (Chapter and Default). It means that if you mix chapter pages and default pages at the same level, the order won&rsquo;t be displayed as expected.</p>
+</div>
 
 
+<p>The workaround is to override page type by adding <code>chapter: false</code> in the front matter of your Chapter page (identified as <code>_index.md</code> file).</p>
+
+<p>For example, with 5 chapters page and 1 default page at the same level, rename the default page as <code>_index.md</code> and add <code>chapter: false</code> in the front-matter. It will then be considered as chapter for weight order computing, but content will be displayed as a default page.</p>
+
+
+      
       
       </div>
     </div>
 
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+    
+      
+        
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+      
+    
+    
+
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://matcornic.github.io/hugo-learn-doc/cont"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://matcornic.github.io/hugo-learn-doc/cont/markdown" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+                <a class="nav nav-prev" href="/hugo-learn-doc/cont/"> <i class="fa fa-chevron-left"></i></a>
+              
+            
+            
+              
+                <a class="nav nav-next" href="/hugo-learn-doc/cont/markdown/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+              
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+        
     </div>
 
     </section>

@@ -1,11 +1,6 @@
 ---
 title: Content
-prev: /basics/configuration
-next: /cont/pages
-aliases :
-  - /content/
-chapter: true
-weight: 0
+weight: 5
 icon: "<b>2. </b>"
 ---
 

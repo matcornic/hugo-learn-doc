@@ -1,7 +1,5 @@
 ---
 title: Getting started
-prev: /basics/requirements
-next: /basics/configuration
 weight: 15
 toc: true
 ---
@@ -35,7 +33,8 @@ theme = "hugo-theme-learn"
 **Hugo-theme-learn** provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command
 
 ```
-hugo new --kind chapter basics/index.md
+# _index.md files are considered as chapters
+hugo new --kind chapter basics/_index.md
 ```
 
 ## Create your first content pages

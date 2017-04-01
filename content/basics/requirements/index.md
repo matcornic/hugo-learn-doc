@@ -1,7 +1,5 @@
 ---
 title: Requirements
-prev: /basics/what-is-this-hugo-theme
-next: /basics/installation
 weight: 10
 ---
 

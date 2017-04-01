@@ -1,7 +1,5 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-next: /cont/
-prev: /basics/installation
 title: Configuration
 toc: true
 weight: 20
