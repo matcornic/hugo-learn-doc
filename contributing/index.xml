@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contributing-rsses on Hugo Learn Theme</title>
+    <title>Contributing on Hugo Learn Theme</title>
     <link>https://matcornic.github.io/hugo-learn-doc/contributing/index.xml</link>
-    <description>Recent content in Contributing-rsses on Hugo Learn Theme</description>
+    <description>Recent content in Contributing on Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:58:30 +0200</lastBuildDate>
     <atom:link href="https://matcornic.github.io/hugo-learn-doc/contributing/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Contributing</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/contributing/</link>
-      <pubDate>Sat, 09 Apr 2016 16:58:30 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;To help the world to be a better place, you could :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Contribute to this doc by using &lt;em&gt;Edit this page&lt;/em&gt; link.&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, the static website generator which this theme is for&lt;/li&gt;
-&lt;li&gt;Contribute to &lt;a href=&#34;https://getgrav.org/&#34;&gt;Grav&lt;/a&gt;, the flat file CMS of which this theme is from (Thanks to MIT license)&lt;/li&gt;
-&lt;li&gt;Contribute to the &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;Hugo-theme-learn&lt;/a&gt; theme itself&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Handling more than 2 levels in documentation.&lt;/li&gt;
-&lt;li&gt;Search in site&lt;/li&gt;
-&lt;li&gt;Handling videos&lt;/li&gt;
-&lt;li&gt;Add optional button to create doc issue (like github)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
   </channel>
 </rss>
