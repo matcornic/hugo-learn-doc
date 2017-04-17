@@ -20,6 +20,10 @@ On top of [Hugo global configuration](https://gohugo.io/overview/configuration/)
   description = ""
   # Shows a checkmark for visited pages on the menu. Default to false
   showVisitedLinks = false
+  # Automatically generates prev and next arrows
+  autoNav = false
+  # Activate search. Don't forget to generate the JSON index file (go check get started page)
+  search = false
 ```
 
 {{% notice tip %}}
