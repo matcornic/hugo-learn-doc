@@ -69,7 +69,7 @@ A *Default* page is any other content page.
 
 To tell **Hugo-theme-learn** to consider a page as a chapter, just the name of your file as `_index.md`.
 
-**Hugo-theme-learn** provides [archetypes](/cont/archetypes) to help you create this kind of pages.
+**Hugo-theme-learn** provides [archetypes]({{< relref "cont/archetypes/index.md" >}}) to help you create this kind of pages.
 
 ## Front Matter
 

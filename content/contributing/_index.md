@@ -26,10 +26,10 @@ Thanks to them <3
 - [ripienaar](https://github.com/ripienaar)
 - [kamilchm](https://github.com/kamilchm)
 - [JohnBlood](https://github.com/JohnBlood)
+- [lfalin](https://github.com/lfalin)
 
 ## TODO
 
 - Handling more than 2 levels in documentation.
-- Search in site
 - Handling videos
 - Add optional button to create doc issue (like github)

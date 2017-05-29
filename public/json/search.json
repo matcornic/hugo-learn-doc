@@ -62,7 +62,7 @@
     {
         "uri": "/content/contributing/_index",
         "title": "Contributing",
-        "content": "\nTo help the world be a better place, you could :\n\nContribute to this doc by using Edit this page link.\nContribute to Hugo, the static website generator which this theme is for\nContribute to Grav, the flat file CMS of which this theme is from (Thanks to MIT license)\nContribute to the Hugo-theme-learn theme itself\n\nContributors\n\nThanks to them <3\n\nmatcornic\nlierdakil\ngwleclerc\nXipas\nThiht\ngiuliov\nripienaar\nkamilchm\nJohnBlood\n\n TODO\n\nHandling more than 2 levels in documentation.\nSearch in site\nHandling videos\nAdd optional button to create doc issue (like github)\n",
+        "content": "\nTo help the world be a better place, you could :\n\nContribute to this doc by using Edit this page link.\nContribute to Hugo, the static website generator which this theme is for\nContribute to Grav, the flat file CMS of which this theme is from (Thanks to MIT license)\nContribute to the Hugo-theme-learn theme itself\n\nContributors\n\nThanks to them <3\n\nmatcornic\nlierdakil\ngwleclerc\nXipas\nThiht\ngiuliov\nripienaar\nkamilchm\nJohnBlood\nlfalin\n\n TODO\n\nHandling more than 2 levels in documentation.\nHandling videos\nAdd optional button to create doc issue (like github)\n",
         "tags": []
     }
 ]
