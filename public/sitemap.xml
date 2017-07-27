@@ -3,69 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/pages/</loc>
+    <loc>http://localhost:1313/uneurl/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/</loc>
+    <loc>http://localhost:1313/uneurl/basics/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</loc>
+    <loc>http://localhost:1313/uneurl/cont/pages/first-child-page/</loc>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/contributing/</loc>
+    <loc>http://localhost:1313/uneurl/basics/what-is-this-hugo-theme/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/cont/markdown/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/cont/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/cont/pages/second-child-page/truc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/basics/requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/cont/pages/second-child-page/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/uneurl/contributing/</loc>
     <lastmod>2016-04-09T16:58:30+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/requirements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/markdown/</loc>
+    <loc>http://localhost:1313/uneurl/cont/shortcodes/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/installation/</loc>
+    <loc>http://localhost:1313/uneurl/basics/installation/</loc>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</loc>
+    <loc>http://localhost:1313/uneurl/basics/configuration/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/shortcodes/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>http://localhost:1313/uneurl/cont/archetypes/</loc>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/basics/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/categories/</loc>
+    <loc>http://localhost:1313/uneurl/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/</loc>
+    <loc>http://localhost:1313/uneurl/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://matcornic.github.io/hugo-learn-doc/tags/</loc>
+    <loc>http://localhost:1313/uneurl/tags/</loc>
     <priority>0</priority>
   </url>
   

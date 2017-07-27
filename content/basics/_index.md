@@ -1,7 +1,8 @@
 ---
 title: Basics
-weight: 0
-icon: "<b>1. </b>"
+weight: 5
+pre: "<b>1. </b>"
+chapter: true
 ---
 
 ### Chapter 1

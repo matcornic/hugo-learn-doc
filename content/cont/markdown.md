@@ -1,8 +1,7 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: Markdown syntax
-toc: true
-weight: 15
+weight: 10
 ---
 
 {{% notice note %}}

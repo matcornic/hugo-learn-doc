@@ -1,7 +1,8 @@
 ---
 title: Content
-weight: 5
-icon: "<b>2. </b>"
+weight: 10
+chapter: true
+pre: "<b>2. </b>"
 ---
 
 ### Chapter 2

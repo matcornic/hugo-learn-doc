@@ -1,65 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Learn Theme</title>
-    <link>https://matcornic.github.io/hugo-learn-doc/</link>
-    <description>Recent content on Hugo Learn Theme</description>
+    <title>Hugo Learn Documentation</title>
+    <link>http://localhost:1313/uneurl/</link>
+    <description>Recent content on Hugo Learn Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>fr-fr</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
-	<atom:link href="https://matcornic.github.io/hugo-learn-doc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/uneurl/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Pages</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/cont/pages/</link>
-      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/cont/pages/</guid>
-      <description>In Hugo, pages are the core of your site. Once it is configure, pages are definitely the added value to your documentation site.
-Folders Organize your site like any other Hugo project. Typically, you will have a content folder with all your pages.
-. └── content ├── brace | ├── yourselves.md &amp;lt;- http://example.com/brace/yourselves/ | ├── winter | | └── index.md &amp;lt;- http://example.com/brace/winter/ | └── index.md &amp;lt;- http://example.com/brace/ ├── is | ├── coming.</description>
-    </item>
-    
-    <item>
-      <title>What is this Hugo theme ?</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/</guid>
-      <description>Hugo-theme-learn is a theme for Hugo, a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this theme is fully designed for technical documentation.
-This theme is a partial porting of the Learn theme of Grav, a modern flat-file CMS written in PHP.
-This current documentation has been statically generated with Hugo with a simple command : hugo -t hugo-theme-learn</description>
-    </item>
-    
-    <item>
-      <title>Requirements</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/requirements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/requirements/</guid>
-      <description>Thanks to the simplicity of Hugo, this page is as empty as this theme needs requirements.
-Just download Hugo binary for your OS (Windows, Linux, Mac) : it&amp;rsquo;s that simple.</description>
-    </item>
     
     <item>
       <title>Markdown syntax</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/cont/markdown/</link>
+      <link>http://localhost:1313/uneurl/cont/markdown/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>https://matcornic.github.io/hugo-learn-doc/cont/markdown/</guid>
+      <guid>http://localhost:1313/uneurl/cont/markdown/</guid>
       <description>This page is a shameful copy of the great Grav original page. Only difference is information about image customization (resizing, add CSS classes&amp;hellip;)
  Let&amp;rsquo;s face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
 Markdown is a better way to write HTML, without all the complexities and ugliness that usually accompanies it.</description>
     </item>
     
     <item>
-      <title>Getting started</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/installation/</link>
+      <title>First child of the second child pafe</title>
+      <link>http://localhost:1313/uneurl/cont/pages/second-child-page/truc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/installation/</guid>
+      <guid>http://localhost:1313/uneurl/cont/pages/second-child-page/truc/</guid>
+      <description>trrregergg</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>http://localhost:1313/uneurl/cont/shortcodes/</link>
+      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
+      
+      <guid>http://localhost:1313/uneurl/cont/shortcodes/</guid>
+      <description>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
+But this happens to be a bad idea. Everyone uses Markdown because it&amp;rsquo;s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
+To avoid this limitations, Hugo created shortcodes. A shortcode is a simple snippet inside a page.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>http://localhost:1313/uneurl/basics/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/uneurl/basics/installation/</guid>
       <description>The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.
 Create your project Hugo provides a new command to create a new website.
 hugo new site &amp;lt;new_project&amp;gt;  Install the theme Install the Hugo-theme-learn theme by following this documentation
@@ -69,31 +57,20 @@ Basic configuration When building the website, you can set a theme by using --th
     
     <item>
       <title>Configuration</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</link>
+      <link>http://localhost:1313/uneurl/basics/configuration/</link>
       <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
       
-      <guid>https://matcornic.github.io/hugo-learn-doc/basics/configuration/</guid>
+      <guid>http://localhost:1313/uneurl/basics/configuration/</guid>
       <description>Site configuration On top of Hugo global configuration, Hugo-theme-learn lets you define the following parameters :
 [params] # Prefix URL to edit current page. Useful to give opportunity to people to create merge request for your doc. # See the config.toml file from this documentation site to have an example. editURL = &amp;quot;&amp;quot; # Author of the site, will be used in meta information author = &amp;quot;&amp;quot; # Description of the site, will be used in meta information description = &amp;quot;&amp;quot; # Shows a checkmark for visited pages on the menu.</description>
     </item>
     
     <item>
-      <title>Shortcodes</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/cont/shortcodes/</link>
-      <pubDate>Sat, 09 Apr 2016 16:50:16 +0200</pubDate>
-      
-      <guid>https://matcornic.github.io/hugo-learn-doc/cont/shortcodes/</guid>
-      <description>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
-But this happens to be a bad idea. Everyone uses Markdown because it&amp;rsquo;s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
-To avoid this limitations, Hugo created shortcodes. A shortcode is a simple snippet inside a page.</description>
-    </item>
-    
-    <item>
       <title>Archetypes</title>
-      <link>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</link>
+      <link>http://localhost:1313/uneurl/cont/archetypes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matcornic.github.io/hugo-learn-doc/cont/archetypes/</guid>
+      <guid>http://localhost:1313/uneurl/cont/archetypes/</guid>
       <description>Using the command: hugo new [relative new content path], you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more : archetypes.
 It is pre-configured skeleton pages with default front matter. Please refer to the documentation for types of page to understand the differences.
 Chapter To create a Chapter page, run the following commands

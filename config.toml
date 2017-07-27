@@ -1,12 +1,16 @@
-baseurl = "https://matcornic.github.io/hugo-learn-doc"
-languageCode = "en-us"
-title = "Hugo Learn Theme"
+languageCode = "en-US"
+DefaultContentLanguage = "en"
+title = "Hugo Learn Documentation"
 theme = "hugo-theme-learn"
 MetaDataFormat = "yaml"
+
 
 [params]
   editURL = "https://github.com/matcornic/hugo-learn-doc/edit/master/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
-  autoNav = true
-  search = true
+  ordersectionsby = "weight" # ordersectionsby = "title"
+  showVisitedLinks = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

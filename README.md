@@ -1,0 +1,30 @@
+- chapter -> OK
+- recherche (avec pointage à la première occurence sur la page) -> OK
+- visited links -> OK
+- disable Search -> OK
+- internationalisation -> DOING
+    - Messages: OK
+    - Se renseigner pour changer le site selon la locale : TODO
+    - Selon réponse précédente, peut-être ajouter un bouton pour changer de langue : TODO
+- sticky bar -> TODO
+- récriture doc -> TODO
+    - créer une section Showcase
+- réintégrer la doc dans le même repo -> TODO
+- netlify -> TODO
+- home page -> TODO
+- vérifier que ça fonctionne avec une base url -> OK
+- récupérer les shortcodes utiles -> TODO
+    - expand
+    - mermaide
+    - viewppt
+    - viewxls
+- tester les affichages de page enfant -> TODO
+- comprendre l'histoire de pagination -> TODO
+- refaire la possibilité d'overrider le style/script/etc -> TODO
+- améliorer les couleurs de surlignement de highlightjs -> OK
+- dernier ménage de vieux truc inutiles -> TODO
+- créer les archetypes -> TODO
+    -> créé ceux de base -> OK
+    -> vérifier la possibilité de générer automatiquement le bon weight -> TODO
+- créer des thèmes de base -> TODO
+- ajouter Travis pour tester le thème avec les nouvelles versions de Hugo.

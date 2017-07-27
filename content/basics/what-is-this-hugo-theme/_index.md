@@ -1,6 +1,7 @@
 ---
 title: What is this Hugo theme ?
 weight: 5
+disableToc: true
 ---
 
 **Hugo-theme-learn** is a theme for [Hugo](https://gohugo.io/), a fast and modern static website engine written in Go. Where Hugo is often used for blogs, this theme is fully designed for **technical documentation**.
